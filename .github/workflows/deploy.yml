@@ -23,7 +23,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-${{ runner.OS }}-
       - name: Install dependencies
-        run: pnpm install --prod --pure-lockfile
+        run: pnpm install --prod --fix-lockfile
       - name: Build
         run: pnpm build --prefix-paths
         env:
