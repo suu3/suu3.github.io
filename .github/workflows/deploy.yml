@@ -22,10 +22,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
+          cache-dependency-path: ./client/package-lock.json
       - name: Install dependencies
         run: pnpm install
       - name: Build
-        run: pnpm build --prefix-path
+        run: pnpm build
         env:
           NODE_ENV: production
       - uses: peaceiris/actions-gh-pages@v2
