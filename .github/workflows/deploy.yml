@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --prod --fix-lockfile
       - name: Build
-        run: pnpm build --prefix-paths
+        run: pnpm build
         env:
           NODE_ENV: production
       - uses: peaceiris/actions-gh-pages@v2

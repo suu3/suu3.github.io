@@ -8,7 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/gatsby-blog", // for github actions
   siteMetadata: {
     title: `Suu3 Blog`,
     author: {
