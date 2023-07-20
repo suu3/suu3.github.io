@@ -5,10 +5,13 @@ on:
       - main
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     steps:
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -16,7 +19,7 @@ jobs:
           node-version: "18.x"
       - uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 8z
       - name: Install dependencies
         run: pnpm install
       - name: Build

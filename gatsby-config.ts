@@ -123,4 +123,5 @@ module.exports = {
       },
     },
   ],
+  trailingSlash: `never`, // url 뒤 행 슬래쉬 trailing slash
 }
