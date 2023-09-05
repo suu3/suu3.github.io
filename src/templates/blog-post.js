@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
+import Utterances from "../components/utterances"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -57,6 +58,7 @@ const BlogPostTemplate = ({
           </li>
         </ul>
       </nav>
+      <Utterances />
     </Layout>
   )
 }
