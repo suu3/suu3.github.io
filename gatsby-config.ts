@@ -13,7 +13,7 @@ module.exports = {
     title: `Suu3 Blog`,
     author: {
       name: `suu3`,
-      summary: `미루다 미루다 만든 블로그`,
+      summary: `스우의 기술 블로그`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
@@ -122,6 +122,9 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: "gatsby-plugin-postcss",
     },
   ],
   trailingSlash: `never`, // url 뒤 후행 슬래쉬 trailing slash

@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { profile } from "./navigation.module.css"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -30,9 +31,10 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
+  return null
   return (
-    <div className="bio">
-      {/* <StaticImage
+    <div className={profile}>
+      <StaticImage
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
@@ -41,8 +43,8 @@ const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
-      /> */}
-      {/* {author?.name && (
+      />{" "}
+      {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
@@ -50,7 +52,7 @@ const Bio = () => {
             You should follow them on Twitter
           </a>
         </p>
-      )} */}
+      )}
     </div>
   )
 }

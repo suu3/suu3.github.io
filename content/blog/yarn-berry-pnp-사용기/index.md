@@ -14,7 +14,7 @@ pnpm과 비교하자면 yarn berry + pnp는 한번 캐시 되면 설치 속도�
 
 yarn berry를 쓰면서 몇몇 마주했던 문제 상황들을 서술하려고 한다.
 
-# Yarn berry + pnp vs 기존 yarn과 npm
+## Yarn berry + pnp vs 기존 yarn과 npm
 
 (yarn berry = yarn2 같은 말이다.)
 
@@ -27,9 +27,9 @@ yarn berry를 쓰면서 몇몇 마주했던 문제 상황들을 서술하려고 
 - yarn berry + pnp는 호이스팅 없이 .yarn/cache에 의존성 zip 아카이브 파일을 관리하고, pnp.cjs 에 패키지들의 의존성 정보과 위치를 명시하여 패키지를 검색할 수 있게 한다.
 - yarn berry를 사용하게 되면 .yarn/cache 에 있는 zip 파일들을 원격 저장소에 올리게 된다. 이렇게 할 경우 협업자가 clone 받고 yarn install할 필요가 없어진다. `(zero install)`
 
-# yarn berry 시작하기
+## yarn berry 시작하기
 
-[Installation](https://yarnpkg.com/getting-started/install#updating-to-the-latest-versions)
+[Installation](https://yarnpkg.com/getting-started/install##updating-to-the-latest-versions)
 
 1. yarn 설치
 

@@ -13,7 +13,7 @@ description: 줄임말로 웹 용어 이해하기
 
 평소에 아무 생각 없이 당연하게 쓰는 용어들이 왜 그 용어가 되었는지 알아보면 의미 있을 것 같아 정리해보게 됐다.
 
-# HTML - HyperText Markup Language
+## HTML - HyperText Markup Language
 
 HTML은 최초로 웹 서버와 웹 브라우저를 만든 팀 버너스리가 만든 마크업 언어이다.
 
@@ -33,7 +33,7 @@ HTML은 최초로 웹 서버와 웹 브라우저를 만든 팀 버너스리가 �
 ![world-wide-web](./world-wide-web.png)
 (팀 버너스리가 만든 최초의 웹인 월드 와이드 웹. https://www.w3.org/People/Berners-Lee/WorldWideWeb.html)
 
-## MarkDown과 MarkUp은 뭐가 다를까?
+#### MarkDown과 MarkUp은 뭐가 다를까?
 
 지금 쓰고 있는 이 문서의 형식인 마크 다운과도 헷갈렸는데,
 

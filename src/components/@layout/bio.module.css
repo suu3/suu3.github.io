@@ -1,0 +1,15 @@
+.profile {
+  display: flex;
+  margin-bottom: var(--spacing-16);
+}
+
+.profile p {
+  margin-bottom: var(--spacing-0);
+}
+
+.profile-avatar {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  min-width: 50px;
+  border-radius: 100%;
+}

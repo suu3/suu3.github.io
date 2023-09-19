@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: var(--fixed-z-index);
+  font-size: var(--fontSize-3);
+  margin: 0;
+
+  height: 60px;
+  backdrop-filter: blur(4px);
+}
+
+.inner {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  width: 100%;
+}
