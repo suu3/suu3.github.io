@@ -1,11 +1,14 @@
 import React, { ReactNode } from "react"
-import { wrapper, inner } from "./navigation.module.css"
+import { wrapper, inner, menu } from "./navigation.module.css"
+import { Link } from "gatsby"
 
 const Navigation = ({ children }: { children: ReactNode }) => {
   return (
     <nav className={wrapper}>
       <ul className={inner}>
-        {/* <li>logo</li> */}
+        <li className={menu}>
+          <Link to="/">Suu3 Blog</Link>
+        </li>
         {children}
       </ul>
     </nav>

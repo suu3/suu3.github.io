@@ -11,7 +11,8 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">
         <Navigation>
-          <Link to="/">{title}</Link>
+          {/* <Link to="/">{title}</Link> */}
+          <></>
         </Navigation>
       </header>
       <motion.main
