@@ -192,9 +192,6 @@ ol {
 ul li,
 ol li {
   /* 추가 */
-  margin-left: var(--spacing-8);
-
-  padding-left: var(--spacing-0);
   margin-bottom: calc(var(--spacing-8) / 2);
 }
 
@@ -270,51 +267,6 @@ a:focus {
   margin-bottom: var(--spacing-12);
 }
 
-.post-list-item header h2 span {
-  padding: 0 5px;
-  box-shadow: inset 0 0 0 0 var(--color-primary);
-  transition: all 0.2s ease-in-out 0s;
-}
-
-.post-list-item {
-  padding: var(--spacing-8) 0;
-  margin: var(--spacing-4) 0;
-
-  border-top: 1px solid var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
-
-  transition: all 0.2s ease-in-out 0s;
-
-  &:hover {
-    transform: translateX(var(--spacing-4));
-
-    > header h2 span {
-      box-shadow: inset 0 -300px 0 0 var(--color-primary);
-      color: white;
-    }
-  }
-}
-
-.post-list-item p {
-  margin: var(--spacing-0) var(--spacing-2);
-  color: var(--color-text);
-}
-
-.post-list-item header {
-  margin-bottom: var(--spacing-4);
-}
-
-.post-list-item header small {
-  margin: 0 var(--spacing-2);
-  color: var(--color-text);
-}
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-}
-
 .header-link-home {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
@@ -326,6 +278,20 @@ a:focus {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
 
+.blog-post li {
+  margin-left: var(--spacing-8);
+  padding-left: var(--spacing-0);
+}
+
+.blog-post h2 {
+  padding-bottom: var(--spacing-2);
+  border-bottom: 1px solid var(--color-accent);
+  /* background: linear-gradient(
+    to top,
+    var(--color-primary) 50%,
+    transparent 50%
+  ); */
+}
 .blog-post header p {
   font-size: var(--fontSize-2);
   font-family: var(--font-heading);

@@ -2,8 +2,9 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/@layout/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/@core/layout"
+import Seo from "../components/@core/seo"
+import PostListItem from "../components/post-list-item"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -32,26 +33,11 @@ const BlogIndex = ({ data, location }) => {
           return (
             <li key={post.fields.slug}>
               <Link to={post.fields.slug} itemProp="url">
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header>
-                    <h2>
-                      <span itemProp="headline">{title}</span>
-                    </h2>
-                    <small>{post.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
+                <PostListItem
+                  title={title}
+                  date={post.frontmatter.date}
+                  description={post.frontmatter.description || post.excerpt}
+                />
               </Link>
             </li>
           )

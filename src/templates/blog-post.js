@@ -1,10 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Utterances from "../components/utterances"
+import Utterances from "../components/@core/utterances"
 import Bio from "../components/@layout/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/@core/layout"
+import Seo from "../components/@core/seo"
+import Arrow from "../components/arrow"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -46,7 +47,7 @@ const BlogPostTemplate = ({
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                {/* <Arrow /> */}← {previous.frontmatter.title}
               </Link>
             )}
           </li>

@@ -1,5 +1,5 @@
 import * as React from "react"
-import Navigation from "./@layout/navigation"
+import Navigation from "../@layout/navigation"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
 
