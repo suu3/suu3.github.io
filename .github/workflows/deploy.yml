@@ -17,6 +17,8 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
+      - name: test
+        run: ls
       - name: Install dependencies
         run: pnpm install
       - name: Build
