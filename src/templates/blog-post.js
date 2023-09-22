@@ -5,7 +5,7 @@ import Utterances from "../components/@core/utterances"
 import Bio from "../components/@layout/bio"
 import Layout from "../components/@core/layout"
 import Seo from "../components/@core/seo"
-import Arrow from "../components/arrow"
+//import Arrow from "../components/arrow"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -24,15 +24,16 @@ const BlogPostTemplate = ({
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
           <hr />
+          <p>Tag test: {post.frontmatter.tag}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
         <hr />
-        <footer>
+        {/* <footer>
           <Bio />
-        </footer>
+        </footer> */}
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -95,6 +96,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tag
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

@@ -34,6 +34,10 @@
   font-weight: 700;
 }
 
+.menu a {
+  display: flex;
+}
+
 .menu a::after {
   /* Fade in */
   content: "";
