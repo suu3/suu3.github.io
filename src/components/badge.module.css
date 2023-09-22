@@ -1,0 +1,9 @@
+.box {
+  border: 2px solid var(--color-accent);
+  display: inline-block;
+  border-radius: 14px;
+  padding: 1px 10px;
+
+  font-size: var(--fontSize-0);
+  margin-right: var(--spacing-2);
+}

@@ -16,7 +16,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: var(--maxWidth-3xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -57,16 +57,18 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #7892b5;
-  --color-text: #2e353f;
+  --color-primary: #f45b49;
+  --color-secondary: #4a0bfa;
+  --color-tertiary: #ecd760;
+  --color-text: #0a0706;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-heading-black: #0a0706;
+  --color-accent: #1a2827;
 
   /* custom variables */
   --fixed-z-index: 100;
-  --background-color: #efefef;
+  --background-color: #ffffff;
 }
 
 /* HTML elements */
@@ -89,6 +91,10 @@ body {
   font-size: var(--fontSize-1);
   color: var(--color-text);
   background-color: var(--background-color);
+
+  /*grid
+  background: url("/images/grid-vert.svg") repeat;
+  padding: 50px;*/
 }
 
 header li {
@@ -285,8 +291,9 @@ a:focus {
 
 .blog-post h2 {
   padding-bottom: var(--spacing-2);
+  /*
   border-bottom: 1px solid var(--color-accent);
-  /* background: linear-gradient(
+   background: linear-gradient(
     to top,
     var(--color-primary) 50%,
     transparent 50%

@@ -36,6 +36,7 @@ const BlogIndex = ({ data, location }) => {
                 <PostListItem
                   title={title}
                   date={post.frontmatter.date}
+                  tag={post.frontmatter.tag}
                   description={post.frontmatter.description || post.excerpt}
                 />
               </Link>
@@ -73,6 +74,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tag
         }
       }
     }
