@@ -1,7 +1,7 @@
 import * as React from "react"
 import Navigation from "../@layout/navigation"
 import { motion } from "framer-motion"
-import CategoryMenu from "../@layout/CategoryMenu"
+import CategoryMenu from "../@layout/category-menu"
 
 const Layout = ({ location, categories, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -12,7 +12,9 @@ const Layout = ({ location, categories, children }) => {
       <header className="global-header">
         <Navigation />
       </header>
-      {categories && <CategoryMenu categories={categories} />}
+      {categories && (
+        <CategoryMenu pathname={location.pathname} categories={categories} />
+      )}
       <motion.main
         initial={{
           opacity: 0,
