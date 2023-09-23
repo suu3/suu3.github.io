@@ -1,9 +1,9 @@
 import * as React from "react"
 import Navigation from "../@layout/navigation"
-import { Link } from "gatsby"
 import { motion } from "framer-motion"
+import CategoryMenu from "../@layout/CategoryMenu"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, categories, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
 
@@ -12,6 +12,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">
         <Navigation />
       </header>
+      {categories && <CategoryMenu categories={categories} />}
       <motion.main
         initial={{
           opacity: 0,

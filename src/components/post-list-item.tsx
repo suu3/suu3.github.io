@@ -1,14 +1,6 @@
 import React from "react"
-import {
-  item,
-  box,
-  header,
-  arrow,
-  badgeWrapper,
-  inner,
-  topBar,
-} from "./post-list-item.module.css"
-import Arrow from "./arrow"
+import { item, box, arrow, inner, topBar } from "./post-list-item.module.css"
+// import Arrow from "./arrow"
 import Badge from "./Badge"
 import { withPrefix } from "gatsby"
 interface PostListItemProps {
@@ -37,16 +29,14 @@ const PostListItem = ({
         }}
       />
       {/* <Arrow direction="right" className={arrow} /> */}
-      {badges && <div className={badgeWrapper}>{badges}</div>}
+      <span className={arrow}>→</span>
       <div className={inner}>
-        <span className={arrow}>→</span>
+        {badges && <div>{badges}</div>}
         <div className={item}>
-          <header className={header}>
-            <h2>
-              <span itemProp="headline">{title}</span>
-            </h2>
-            <small>{date}</small>
-          </header>
+          <h2>
+            <span itemProp="headline">{title}</span>
+          </h2>
+          <small>{date}</small>
           <section>
             <p
               dangerouslySetInnerHTML={{

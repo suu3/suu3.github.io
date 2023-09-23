@@ -3,27 +3,24 @@ import { graphql } from "gatsby"
 import Seo from "../components/@core/seo"
 import PostListTemplate from "../components/@layout/post-list-template"
 
-const BlogIndex = ({ data, location }) => {
-  return <PostListTemplate {...{ data, location }} />
+const CategoryPost = ({ data, location, pageContext }) => {
+  return <PostListTemplate {...{ data, location, pageContext }} />
 }
 
-export default BlogIndex
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
+export default CategoryPost
 export const Head = () => <Seo title="All posts" />
 
 export const pageQuery = graphql`
-  {
+  query ($category: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { category: { eq: $category } } }
+    ) {
       categoryList: distinct(field: { frontmatter: { category: SELECT } })
       nodes {
         excerpt

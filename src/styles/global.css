@@ -80,6 +80,18 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--background-color);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 0.5rem;
+}
+*::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+}
+
 html {
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);

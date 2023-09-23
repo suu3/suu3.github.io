@@ -1,5 +1,5 @@
-import React, { ReactNode, useEffect, useState } from "react"
-import { wrapper, inner, menu, hide, icon } from "./navigation.module.css"
+import React, { useEffect, useState } from "react"
+import { wrapper, inner, hide, icon } from "./navigation.module.css"
 import { Link } from "gatsby"
 import { SplitText } from "../split-text"
 import clsx from "clsx"
@@ -38,7 +38,7 @@ const Navigation = () => {
   return (
     <nav className={clsx(wrapper, !showNavigation && hide)}>
       <ul className={inner}>
-        <li className={menu}>
+        <li>
           <Link to="/">
             <SplitText words="SUU3 BLOG" />
           </Link>

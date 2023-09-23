@@ -10,7 +10,7 @@ import "./src/styles/global.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
-import { ReactComponent as Background } from "./static/images/background.svg"
+// import { ReactComponent as Background } from "./static/images/background.svg"
 
 export const wrapPageElement = ({ element }) => (
   <>

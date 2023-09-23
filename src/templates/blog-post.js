@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Utterances from "../components/@core/utterances"
-import Bio from "../components/@layout/bio"
+// import Bio from "../components/@layout/bio"
 import Layout from "../components/@core/layout"
 import Seo from "../components/@core/seo"
 import Badge from "../components/badge"
