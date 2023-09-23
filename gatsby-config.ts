@@ -13,13 +13,13 @@ module.exports = {
     title: `Suu3 Blog`,
     author: {
       name: `suu3`,
-      summary: `스우의 기술 블로그`,
+      summary: `Suu3 Blog`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `@suu3의 기술 블로그`,
+    siteUrl: `https://suu3.github.io/blog/home`,
+    // social: {
+    //   twitter: `kylemathews`,
+    // },
   },
   plugins: [
     "gatsby-plugin-pnpm",
@@ -115,7 +115,7 @@ module.exports = {
       options: {
         name: `Suu3 Blog`,
         short_name: `Suu3 Blog`,
-        start_url: `/`,
+        start_url: `/home`,
         background_color: `#efefef`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/

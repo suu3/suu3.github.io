@@ -14,6 +14,7 @@ const blogPost = path.resolve(`./src/templates/blog-post.js`)
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
 exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createRedirect } = actions
   const { createPage } = actions
 
   // Get all markdown blog posts sorted by date
@@ -47,12 +48,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // 카테고리 목록을 가져오고, 각 카테고리마다 페이지 생성
   const categories = result.data.postsRemark.categoryList
+  console.log(categories)
   const posts = result.data.postsRemark.nodes
 
   if (categories.length > 0) {
     categories.forEach(category => {
       createPage({
-        path: `/${category}/`,
+        path: `/${category}`,
         component: categoryPosts,
         context: { category },
       })
@@ -79,6 +81,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  createRedirect({
+    fromPath: `/`,
+    toPath: `/home`,
+  })
 }
 
 /**

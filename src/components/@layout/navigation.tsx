@@ -39,7 +39,7 @@ const Navigation = () => {
     <nav className={clsx(wrapper, !showNavigation && hide)}>
       <ul className={inner}>
         <li>
-          <Link to="/">
+          <Link to="/home">
             <SplitText words="SUU3 BLOG" />
           </Link>
         </li>

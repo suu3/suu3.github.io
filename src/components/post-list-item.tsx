@@ -1,7 +1,7 @@
 import React from "react"
 import { item, box, arrow, inner, topBar } from "./post-list-item.module.css"
 // import Arrow from "./arrow"
-import Badge from "./Badge"
+import Badge from "./badge"
 import { withPrefix } from "gatsby"
 interface PostListItemProps {
   title: string

@@ -3,11 +3,11 @@ import { graphql } from "gatsby"
 import Seo from "../components/@core/seo"
 import PostListTemplate from "../components/@layout/post-list-template"
 
-const BlogIndex = ({ data, location }) => {
+const Home = ({ data, location }) => {
   return <PostListTemplate {...{ data, location }} />
 }
 
-export default BlogIndex
+export default Home
 
 /**
  * Head export to define metadata for the page

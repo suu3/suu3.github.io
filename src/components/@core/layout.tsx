@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import CategoryMenu from "../@layout/category-menu"
 
 const Layout = ({ location, categories, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = `${__PATH_PREFIX__}`
   const isRootPath = location.pathname === rootPath
 
   return (
