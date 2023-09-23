@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React from "react"
 import {
   item,
   box,
@@ -6,6 +6,7 @@ import {
   arrow,
   badgeWrapper,
   inner,
+  topBar,
 } from "./post-list-item.module.css"
 import Arrow from "./arrow"
 import Badge from "./Badge"
@@ -24,11 +25,12 @@ const PostListItem = ({
   tag = [],
 }: PostListItemProps) => {
   const badges = tag?.map(item => {
-    return <Badge>{item}</Badge>
+    return <Badge key={item}>{item}</Badge>
   })
 
   return (
     <article className={box} itemScope itemType="http://schema.org/Article">
+      <div className={topBar} />
       {/* <Arrow direction="right" className={arrow} /> */}
       {badges && <div className={badgeWrapper}>{badges}</div>}
       <div className={inner}>

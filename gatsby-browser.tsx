@@ -10,9 +10,22 @@ import "./src/styles/global.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+import { ReactComponent as Background } from "./static/images/background.svg"
 
 export const wrapPageElement = ({ element }) => (
-  <AnimatePresence mode="wait">{element}</AnimatePresence>
+  <>
+    {/* <Background
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        margin: "auto",
+        zIndex: -1,
+      }}
+    /> */}
+    <AnimatePresence mode="wait">{element}</AnimatePresence>
+  </>
 )
 
 // must be on Gatsby v2.28 or later -- previous versions had a bug with getSavedScrollPosition that was resolved with v2.28

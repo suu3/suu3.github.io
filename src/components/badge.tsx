@@ -5,7 +5,7 @@ interface BadgeProps {
   children: React.ReactNode
 }
 
-const RANDOM_COLORS = [
+const colors = [
   {
     background: "var(--color-primary)",
     color: "var(--color-heading-black)",
@@ -34,14 +34,13 @@ const RANDOM_COLORS = [
 ]
 
 const Badge = ({ children }: BadgeProps) => {
-  const random = Math.floor(Math.random() * RANDOM_COLORS.length)
+  const random = Math.floor(Math.random() * colors.length)
   return (
     <div
       className={box}
       style={{
-        backgroundColor: RANDOM_COLORS[random].background,
-
-        color: RANDOM_COLORS[random].color,
+        backgroundColor: colors[random].background,
+        color: colors[random].color,
       }}
     >
       # {children}

@@ -15,7 +15,8 @@
   /* position: fixed; */
   position: sticky;
   background: #ffc700;
-  max-width: 18rem;
+  width: 18rem;
+  min-height: 10rem;
   max-height: calc(100vh - 200px);
   overflow: auto;
 
