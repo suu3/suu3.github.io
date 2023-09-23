@@ -69,6 +69,7 @@
   /* custom variables */
   --fixed-z-index: 100;
   --background-color: #ffffff;
+  --navigation-height: 60px;
 }
 
 /* HTML elements */
@@ -260,9 +261,12 @@ a:focus {
 /* Custom classes */
 
 .global-wrapper {
+  background-color: var(--background-color);
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-20) var(--spacing-5) var(--spacing-10);
+  padding: var(--spacing-20) 0 var(--spacing-10);
+
+  position: relative;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
