@@ -10,7 +10,7 @@ import {
 } from "./post-list-item.module.css"
 import Arrow from "./arrow"
 import Badge from "./Badge"
-
+import { withPrefix } from "gatsby"
 interface PostListItemProps {
   title: string
   date: string
@@ -30,7 +30,12 @@ const PostListItem = ({
 
   return (
     <article className={box} itemScope itemType="http://schema.org/Article">
-      <div className={topBar} />
+      <div
+        className={topBar}
+        style={{
+          backgroundImage: `url(${withPrefix("/images/grid-vert-2.svg")})`,
+        }}
+      />
       {/* <Arrow direction="right" className={arrow} /> */}
       {badges && <div className={badgeWrapper}>{badges}</div>}
       <div className={inner}>

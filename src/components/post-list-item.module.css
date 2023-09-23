@@ -50,7 +50,6 @@
   right: 0;
 
   background-color: var(--color-accent);
-  background-image: url("/images/grid-vert-2.svg");
   background-repeat: repeat;
 
   &::before {
