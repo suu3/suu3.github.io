@@ -54,7 +54,8 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-prismjs", // should be placed after `gatsby-remark-autolink-headers`
         ],
       },
     },
@@ -118,13 +119,28 @@ module.exports = {
         background_color: `#efefef`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        theme_color: `#7892b5`,
+        theme_color: `#f45b49`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: "gatsby-plugin-postcss",
+    },
+    {
+      resolve: "gatsby-plugin-svgr",
+      options: {
+        prettier: true, // use prettier to format JS code output (default)
+        svgo: true, // use svgo to optimize SVGs (default)
+        svgoConfig: {
+          plugins: [
+            {
+              name: "removeViewBox",
+              active: false,
+            }, // remove viewBox when possible (default)
+          ],
+        },
+      },
     },
   ],
   trailingSlash: `never`, // url 뒤 후행 슬래쉬 trailing slash

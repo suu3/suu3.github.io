@@ -6,6 +6,7 @@ import Bio from "../components/@layout/bio"
 import Layout from "../components/@core/layout"
 import Seo from "../components/@core/seo"
 import Badge from "../components/badge"
+import TableContents from "../components/table-contents"
 //import Arrow from "../components/arrow"
 
 const BlogPostTemplate = ({
@@ -20,6 +21,7 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
+      <TableContents content={post.tableOfContents} />
       <article
         className="blog-post"
         itemScope
@@ -97,6 +99,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
