@@ -12,9 +12,7 @@ const Layout = ({ location, categories, children }) => {
       <header className="global-header">
         <Navigation />
       </header>
-      {categories && (
-        <CategoryMenu pathname={location.pathname} categories={categories} />
-      )}
+
       <motion.main
         initial={{
           opacity: 0,
@@ -35,6 +33,11 @@ const Layout = ({ location, categories, children }) => {
           duration: 0.3,
         }}
       >
+        {/* TO DO: 위치 고민. 애니메이션에서 빼면 post 라우트로 바뀔 때 사ㄴ 해야함  */}
+
+        {categories && (
+          <CategoryMenu pathname={location.pathname} categories={categories} />
+        )}
         {children}
       </motion.main>
       <footer>

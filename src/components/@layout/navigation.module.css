@@ -50,3 +50,9 @@
   /* transform: scale(0.4); */
   /* margin-right: var(--spacing-1); */
 }
+
+@media (max-width: 60rem) {
+  .wrapper {
+    padding: var(--spacing-3);
+  }
+}

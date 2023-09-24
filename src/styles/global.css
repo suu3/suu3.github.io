@@ -229,7 +229,7 @@ li > ul {
 
 blockquote {
   color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
+  margin-left: calc(1 * var(--spacing-3));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
@@ -286,7 +286,7 @@ a:focus {
 }
 
 .global-header {
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--spacing-8);
 }
 
 .header-link-home {
@@ -296,45 +296,16 @@ a:focus {
   font-size: var(--fontSize-2);
 }
 
-.blog-post {
-  background: var(--background-color);
-}
-.blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
-}
-
-.blog-post li {
-  margin-left: var(--spacing-8);
-  padding-left: var(--spacing-0);
-}
-
-.blog-post h2 {
-  padding-bottom: var(--spacing-2);
-  /*
-  border-bottom: 1px solid var(--color-accent);
-   background: linear-gradient(
-    to top,
-    var(--color-primary) 50%,
-    transparent 50%
-  ); */
-}
-.blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
-}
-.blog-post header hr {
-  margin-bottom: var(--spacing-4);
-}
-
-.blog-post-nav ul {
-  margin: var(--spacing-0);
-}
-
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
 
 /* Media queries */
+@media (max-width: 60rem) {
+  .global-wrapper {
+    padding: var(--spacing-10) var(--spacing-3) var(--spacing-3);
+  }
+}
 
 @media (max-width: 42rem) {
   blockquote {

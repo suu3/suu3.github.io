@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Utterances from "../components/@core/utterances"
@@ -7,7 +7,17 @@ import Layout from "../components/@core/layout"
 import Seo from "../components/@core/seo"
 import Badge from "../components/badge"
 import TableContents from "../components/table-contents"
-//import Arrow from "../components/arrow"
+import {
+  blogPost,
+  blogPostNav,
+  category,
+  badgeCls,
+  dateCls,
+  leftBox,
+  rightBox,
+  leftArrow,
+  rightArrow,
+} from "./blog-post.module.css"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -16,21 +26,22 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
 
   const badges = post.frontmatter.tag?.map(tag => {
-    return <Badge>{tag}</Badge>
+    return <Badge key={tag}>{tag}</Badge>
   })
 
   return (
     <Layout location={location} title={siteTitle}>
       <TableContents content={post.tableOfContents} />
       <article
-        className="blog-post"
+        className={blogPost}
         itemScope
         itemType="http://schema.org/Article"
       >
         <header>
-          <p>{badges}</p>
+          <p className={category}>{post.frontmatter.category}</p>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p className={dateCls}>{post.frontmatter.date}</p>
+          <p className={badgeCls}>{badges}</p>
           <hr />
         </header>
         <section
@@ -42,27 +53,26 @@ const BlogPostTemplate = ({
           <Bio />
         </footer> */}
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+      <nav className={blogPostNav}>
+        <ul>
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                {/* <Arrow /> */}← {previous.frontmatter.title}
+              <Link className={leftBox} to={previous.fields.slug} rel="prev">
+                <span>
+                  <span className={leftArrow}>←</span> 이전 글
+                </span>
+
+                {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link className={rightBox} to={next.fields.slug} rel="next">
+                <span>
+                  다음 글 <span className={rightArrow}>→</span>
+                </span>
+                {next.frontmatter.title}
               </Link>
             )}
           </li>
@@ -104,6 +114,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        category
         tag
       }
     }

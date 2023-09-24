@@ -1,5 +1,12 @@
 import React from "react"
-import { item, box, arrow, inner, topBar } from "./post-list-item.module.css"
+import {
+  item,
+  box,
+  categoryCls,
+  arrow,
+  inner,
+  topBar,
+} from "./post-list-item.module.css"
 // import Arrow from "./arrow"
 import Badge from "./badge"
 import { withPrefix } from "gatsby"
@@ -8,12 +15,14 @@ interface PostListItemProps {
   date: string
   description: string | TrustedHTML
   tag: string[]
+  category?: string
 }
 
 const PostListItem = ({
   title,
   date,
   description,
+  category,
   tag = [],
 }: PostListItemProps) => {
   const badges = tag?.map(item => {
@@ -31,6 +40,7 @@ const PostListItem = ({
       {/* <Arrow direction="right" className={arrow} /> */}
       <span className={arrow}>→</span>
       <div className={inner}>
+        {category && <p className={categoryCls}>{category}</p>}
         {badges && <div>{badges}</div>}
         <div className={item}>
           <h2>

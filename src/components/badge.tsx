@@ -34,18 +34,7 @@ const colors = [
 ]
 
 const Badge = ({ children }: BadgeProps) => {
-  const random = Math.floor(Math.random() * colors.length)
-  return (
-    <div
-      className={box}
-      style={{
-        backgroundColor: colors[random].background,
-        color: colors[random].color,
-      }}
-    >
-      # {children}
-    </div>
-  )
+  return <div className={box}># {children}</div>
 }
 
 export default Badge

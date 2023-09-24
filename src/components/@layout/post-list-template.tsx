@@ -20,6 +20,7 @@ const PostListTemplate = ({ data, location }) => {
               <PostListItem
                 title={title}
                 date={post.frontmatter.date}
+                category={post.frontmatter?.category}
                 tag={post.frontmatter.tag}
                 description={post.frontmatter.description || post.excerpt}
               />
