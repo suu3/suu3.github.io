@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import Seo from "../components/@core/seo"
 import PostListTemplate from "../components/@layout/post-list-template"
 
-const Home = ({ data, location }) => {
-  return <PostListTemplate {...{ data, location }} />
+const Home = ({ data, location, pageContext }) => {
+  return <PostListTemplate {...{ data, location, pageContext }} />
 }
 
 export default Home
@@ -17,14 +17,24 @@ export default Home
 export const Head = () => <Seo title="All posts" />
 
 export const pageQuery = graphql`
-  {
+  query ($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
-      categoryList: distinct(field: { frontmatter: { category: SELECT } })
+    allPostsInfo: allMarkdownRemark {
+      totalCount
+      group(field: { frontmatter: { category: SELECT } }) {
+        fieldValue
+        totalCount
+      }
+    }
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      limit: $limit
+      skip: $skip
+    ) {
       nodes {
         excerpt
         fields {

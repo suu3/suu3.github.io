@@ -317,3 +317,27 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+/* TO DO: pagination 나중에 모듈 적용 가능하게 교체*/
+.rc-pagination-item.rc-pagination-item-active {
+  > a {
+    color: var(--color-primary);
+  }
+}
+.rc-pagination-item,
+.rc-pagination-next,
+.rc-pagination-prev {
+  cursor: pointer;
+}
+
+.rc-pagination-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.rc-pagination-item {
+  font-size: var(--fontSize-2);
+
+  > a {
+    color: var(--color-text);
+  }
+}

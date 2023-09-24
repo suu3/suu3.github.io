@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import TransitionMain from "../components/@layout/transition-main"
 import Utterances from "../components/@core/utterances"
 // import Bio from "../components/@layout/bio"
 import Layout from "../components/@core/layout"
@@ -15,8 +16,6 @@ import {
   dateCls,
   leftBox,
   rightBox,
-  leftArrow,
-  rightArrow,
 } from "./blog-post.module.css"
 
 const BlogPostTemplate = ({
@@ -31,54 +30,56 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      <TableContents content={post.tableOfContents} />
-      <article
-        className={blogPost}
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <p className={category}>{post.frontmatter.category}</p>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p className={dateCls}>{post.frontmatter.date}</p>
-          <p className={badgeCls}>{badges}</p>
+      <TransitionMain>
+        <TableContents content={post.tableOfContents} />
+        <article
+          className={blogPost}
+          itemScope
+          itemType="http://schema.org/Article"
+        >
+          <header>
+            <p className={category}>{post.frontmatter.category}</p>
+            <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <p className={dateCls}>{post.frontmatter.date}</p>
+            <p className={badgeCls}>{badges}</p>
+            <hr />
+          </header>
+          <section
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            itemProp="articleBody"
+          />
           <hr />
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        {/* <footer>
+          {/* <footer>
           <Bio />
         </footer> */}
-      </article>
-      <nav className={blogPostNav}>
-        <ul>
-          <li>
-            {previous && (
-              <Link className={leftBox} to={previous.fields.slug} rel="prev">
-                <span>
-                  <span className={leftArrow}>←</span> 이전 글
-                </span>
+        </article>
+        <nav className={blogPostNav}>
+          <ul>
+            <li>
+              {previous && (
+                <Link className={leftBox} to={previous.fields.slug} rel="prev">
+                  <span>
+                    <span>←</span> 이전 글
+                  </span>
 
-                {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link className={rightBox} to={next.fields.slug} rel="next">
-                <span>
-                  다음 글 <span className={rightArrow}>→</span>
-                </span>
-                {next.frontmatter.title}
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
-      <Utterances />
+                  {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link className={rightBox} to={next.fields.slug} rel="next">
+                  <span>
+                    다음 글 <span>→</span>
+                  </span>
+                  {next.frontmatter.title}
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
+        <Utterances />
+      </TransitionMain>{" "}
     </Layout>
   )
 }

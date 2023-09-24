@@ -11,17 +11,25 @@ export default CategoryPost
 export const Head = () => <Seo title="All posts" />
 
 export const pageQuery = graphql`
-  query ($category: String!) {
+  query ($category: String!, $skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
       }
     }
+    allPostsInfo: allMarkdownRemark {
+      totalCount
+      group(field: { frontmatter: { category: SELECT } }) {
+        fieldValue
+        totalCount
+      }
+    }
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
+      limit: $limit
+      skip: $skip
       filter: { frontmatter: { category: { eq: $category } } }
     ) {
-      categoryList: distinct(field: { frontmatter: { category: SELECT } })
       nodes {
         excerpt
         fields {

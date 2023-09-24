@@ -3,8 +3,10 @@ import React, { useState } from "react"
 import { list, active, inactive } from "./category-menu.module.css"
 import { withPrefix } from "gatsby"
 
-const CategoryMenu = ({ categories = [], pathname = "" }) => {
+const CategoryMenu = ({ categories = {}, pathname = "" }) => {
   const [clicked, setClicked] = useState(pathname)
+  const { totalCount, group } = categories
+
   const listClassName = (category: string) =>
     clicked === withPrefix(category) ? active : inactive
 
@@ -15,15 +17,17 @@ const CategoryMenu = ({ categories = [], pathname = "" }) => {
   return (
     <ul className={list}>
       <Link to="/home" onClick={() => handleClickMenu(withPrefix("/home"))}>
-        <li className={listClassName("/home")}>All</li>
+        <li className={listClassName("/home")}>All ({totalCount})</li>
       </Link>
-      {categories.map((category: string) => (
+      {group.map(({ fieldValue, totalCount }: string) => (
         <Link
-          key={category}
-          to={`/${category}`}
-          onClick={() => handleClickMenu(withPrefix(`/${category}`))}
+          key={fieldValue}
+          to={`/${fieldValue}`}
+          onClick={() => handleClickMenu(withPrefix(`/${fieldValue}`))}
         >
-          <li className={listClassName(`/${category}`)}>{category}</li>
+          <li className={listClassName(`/${fieldValue}`)}>
+            {fieldValue} ({totalCount})
+          </li>
         </Link>
       ))}
     </ul>
