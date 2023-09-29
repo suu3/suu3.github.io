@@ -2,6 +2,8 @@
 title: Sass 사용기
 date: "2023-08-13"
 description: Sass를 사용하면서 알게된 것들
+tag: ["sass"]
+category: "css"
 ---
 
 CSS 프레임워크들에 대해 차츰 알아가던 작년의 나는 Sass를 회사에 입사하면서 처음 써보게 됐다.

@@ -2,6 +2,8 @@
 title: 정규 표현식
 date: "2023-08-05"
 description: "정규 표현식"
+tag: ["regex", "javascript"]
+category: "javascript"
 ---
 
 ## 정규 표현식

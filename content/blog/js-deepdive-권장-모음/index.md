@@ -2,6 +2,8 @@
 title: 책 모던 자바스크립트 Deep Dive 권장 사항 모음
 date: "2023-08-06"
 description: "모던 자바스크립트 Deep Dive 책 스터디를 진행하면서 '권장한다'는 내용들을 모아보았다."
+tag: ["javascript"]
+category: "javascript"
 ---
 
 (23.08.06 마지막 업데이트)

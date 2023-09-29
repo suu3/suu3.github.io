@@ -1,12 +1,13 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: var(--spacing-2);
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--spacing-4);
+  /* flex-wrap: wrap; */
 }
 
 .list li {
   text-align: center;
-  font-size: var(--fontSize-3);
+  font-size: var(--fontSize-2);
   font-weight: 700;
   list-style: none;
 
@@ -30,6 +31,6 @@
 
 @media (max-width: 42rem) {
   .list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }

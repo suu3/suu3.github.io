@@ -34,7 +34,7 @@ const colors = [
 ]
 
 const Badge = ({ children }: BadgeProps) => {
-  return <div className={box}># {children}</div>
+  return <span className={box}># {children}</span>
 }
 
 export default Badge

@@ -2,6 +2,8 @@
 title: 줄임말로 웹 용어 이해하기
 date: "2023-08-12"
 description: 줄임말로 웹 용어 이해하기
+tag: ["web"]
+category: "web"
 ---
 
 예~전에 면접에서으로 html(HyperText Markup Language)의 풀네임이 뭐냐는 질문을 들은 적이 있다.

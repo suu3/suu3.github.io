@@ -13,12 +13,20 @@ const PostListTemplate = ({ data, location, pageContext }) => {
   const categories = data.allPostsInfo
   const posts = data.allMarkdownRemark.nodes
 
+  React.useEffect(() => {
+    const pathname =
+      currentPage === 1
+        ? location.pathname.split("/").slice(1).join("/")
+        : location.pathname.split("/").slice(2, -1).join("/")
+    console.log("pagination", location.pathname.split("/"))
+  }, [location.pathname])
+
   const handlePageChange = (page: number) => {
     const pathname =
       currentPage === 1
-        ? location.pathname
-        : location.pathname.split("/").slice(0, -1).join("/")
-    navigate(page === 1 ? pathname : `${pathname}/${page}`)
+        ? location.pathname.split("/").slice(1).join("/")
+        : location.pathname.split("/").slice(2, -1).join("/")
+    navigate(page === 1 ? `/${pathname}` : `/${pathname}/${page}`)
   }
 
   const textItemRender = (current, type, element) => {

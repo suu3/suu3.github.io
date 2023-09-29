@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
-import { wrapper, inner, hide, icon } from "./navigation.module.css"
+import { wrapper, inner, hide, icon, logo } from "./navigation.module.css"
 import { Link } from "gatsby"
 import { SplitText } from "../split-text"
 import clsx from "clsx"
 import { ReactComponent as Github } from "/static/images/github.svg"
 import throttle from "lodash/throttle"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Navigation = () => {
   const [showNavigation, setShowNavigation] = useState(true)
@@ -40,7 +41,18 @@ const Navigation = () => {
       <ul className={inner}>
         <li>
           <Link to="/home">
-            <SplitText words="SUU3 BLOG" />
+            <StaticImage
+              className={logo}
+              layout="fixed"
+              formats={["auto", "webp", "avif"]}
+              placeholder="blurred"
+              src="../../images/icon.png"
+              width={35}
+              height={35}
+              quality={95}
+              alt="logo"
+            />
+            <SplitText words="Suu Blog" />
           </Link>
         </li>
         <li>

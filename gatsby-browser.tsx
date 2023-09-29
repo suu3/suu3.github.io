@@ -24,6 +24,7 @@ export const wrapPageElement = ({ element }) => (
         zIndex: -1,
       }}
     /> */}
+
     <AnimatePresence mode="wait">{element}</AnimatePresence>
   </>
 )

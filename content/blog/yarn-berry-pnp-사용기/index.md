@@ -2,6 +2,8 @@
 title: Yarn berry + pnp 사용기
 date: "2023-08-04"
 description: "Yarn berry + pnp 사용기"
+tag: ["yarn"]
+category: "기타"
 ---
 
 벌써 yarn berry + pnp 를 사용한 지 반년이 되어간다.

@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { list, active, inactive } from "./category-menu.module.css"
 import { withPrefix } from "gatsby"
 
@@ -13,6 +13,10 @@ const CategoryMenu = ({ categories = {}, pathname = "" }) => {
   const handleClickMenu = (category: string) => {
     setClicked(category)
   }
+
+  useEffect(() => {
+    console.log("category menu", pathname.split("/"))
+  }, [pathname])
 
   return (
     <ul className={list}>
