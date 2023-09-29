@@ -1,0 +1,19 @@
+.wrapper {
+  display: inline-block;
+  overflow: hidden;
+  color: var(--color-text);
+}
+
+.motion-div {
+  display: inline-block;
+  will-change: transform;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.spacing {
+  margin-left: var(--spacing-1);
+}

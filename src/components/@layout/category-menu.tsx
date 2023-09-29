@@ -1,0 +1,41 @@
+import { Link } from "gatsby"
+import React, { useEffect, useState } from "react"
+import { list, active, inactive } from "./category-menu.module.css"
+import { withPrefix } from "gatsby"
+
+const CategoryMenu = ({ categories = {}, pathname = "" }) => {
+  const [clicked, setClicked] = useState(`/${pathname.split("/")[1]}`)
+  const { totalCount, group } = categories
+
+  const listClassName = (category: string) =>
+    clicked === withPrefix(category) ? active : inactive
+
+  const handleClickMenu = (category: string) => {
+    setClicked(category)
+  }
+
+  useEffect(() => {
+    console.log("category menu", pathname.split("/"))
+  }, [pathname])
+
+  return (
+    <ul className={list}>
+      <Link to="/home" onClick={() => handleClickMenu(withPrefix("/home"))}>
+        <li className={listClassName("/home")}>All ({totalCount})</li>
+      </Link>
+      {group.map(({ fieldValue, totalCount }: string) => (
+        <Link
+          key={fieldValue}
+          to={`/${fieldValue}`}
+          onClick={() => handleClickMenu(withPrefix(`/${fieldValue}`))}
+        >
+          <li className={listClassName(`/${fieldValue}`)}>
+            {fieldValue} ({totalCount})
+          </li>
+        </Link>
+      ))}
+    </ul>
+  )
+}
+
+export default CategoryMenu

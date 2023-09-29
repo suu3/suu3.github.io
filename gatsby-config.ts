@@ -13,13 +13,13 @@ module.exports = {
     title: `Suu3 Blog`,
     author: {
       name: `suu3`,
-      summary: `미루다 미루다 만든 블로그`,
+      summary: `Suu3 Blog`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `@suu3의 기술 블로그`,
+    siteUrl: `https://suu3.github.io/blog/home`,
+    // social: {
+    //   twitter: `kylemathews`,
+    // },
   },
   plugins: [
     "gatsby-plugin-pnpm",
@@ -54,7 +54,8 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          "gatsby-remark-autolink-headers",
+          "gatsby-remark-prismjs", // should be placed after `gatsby-remark-autolink-headers`
         ],
       },
     },
@@ -112,15 +113,33 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
-        start_url: `/`,
-        background_color: `#ffffff`,
+        name: `Suu3 Blog`,
+        short_name: `Suu3 Blog`,
+        start_url: `/home`,
+        background_color: `#efefef`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#f45b49`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-postcss",
+    },
+    {
+      resolve: "gatsby-plugin-svgr",
+      options: {
+        prettier: true, // use prettier to format JS code output (default)
+        svgo: true, // use svgo to optimize SVGs (default)
+        svgoConfig: {
+          plugins: [
+            {
+              name: "removeViewBox",
+              active: false,
+            }, // remove viewBox when possible (default)
+          ],
+        },
       },
     },
   ],

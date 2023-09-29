@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
+import { POST_PER_PAGE } from "./src/constants/page"
+
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -14,18 +16,27 @@ const blogPost = path.resolve(`./src/templates/blog-post.js`)
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
 exports.createPages = async ({ graphql, actions, reporter }) => {
+  // const { createRedirect } = actions
   const { createPage } = actions
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+      postsRemark: allMarkdownRemark(
+        sort: { frontmatter: { date: ASC } }
+        limit: 1000
+      ) {
+        categoryList: distinct(field: { frontmatter: { category: SELECT } })
         nodes {
           id
+          frontmatter {
+            category
+          }
           fields {
             slug
           }
         }
+        totalCount
       }
     }
   `)
@@ -38,8 +49,47 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  // 카테고리 목록을 가져오고, 각 카테고리마다 페이지 생성
+  const categories = result.data.postsRemark.categoryList
+  const posts = result.data.postsRemark.nodes
+  const postsPerPage = POST_PER_PAGE
 
+  categories.forEach(category => {
+    const categoryPosts = posts.filter(
+      post => post.frontmatter.category === category
+    )
+    const numPages = Math.ceil(categoryPosts.length / postsPerPage)
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/${category}` : `/${category}/${i + 1}`,
+        component: path.resolve(`./src/templates/category-posts.js`), // Just like `createPage()`\
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+          category,
+          totalCount: categoryPosts.length,
+        },
+      })
+    })
+  })
+
+  //home = all
+  const numPages = Math.ceil(posts.length / postsPerPage)
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/home` : `/home/${i + 1}`,
+      component: path.resolve(`./src/templates/home.tsx`), // Just like `createPage()`\
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+        totalCount: posts.length,
+      },
+    })
+  })
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
@@ -60,6 +110,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  // createRedirect({
+  //   fromPath: `/`,
+  //   toPath: `/home`,
+  // })
 }
 
 /**
@@ -72,7 +127,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const value = createFilePath({ node, getNode })
 
     createNodeField({
-      name: `slug`,
+      name: "slug",
       node,
       value,
     })
@@ -116,6 +171,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      tag: [String]
     }
 
     type Fields {

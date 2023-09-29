@@ -7,18 +7,27 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.4",
     "@fontsource/merriweather": "^5.0.3",
+    "@svgr/webpack": "^8.1.0",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.4",
     "gatsby": "^5.11.0",
     "gatsby-plugin-feed": "^5.11.0",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-plugin-svgr": "3.0.0-beta.0",
+    "gatsby-remark-autolink-headers": "^6.12.0",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-remark-responsive-iframe": "^6.11.1",
     "gatsby-source-filesystem": "^5.11.0",
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.30",
     "prismjs": "^1.29.0",
+    "rc-pagination": "^3.6.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
@@ -32,18 +41,18 @@
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.8"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://suu3.github.io/blog/",
   "keywords": [
     "gatsby"
   ],
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/suu3/blog.git"
   },
   "scripts": {
-    "deploy": "gatsby build --prefix-paths  && gh-pages -d public -b deploy",
-    "build": "gatsby build",
+    "deploy": "gatsby clean && gatsby build --prefix-paths  && gh-pages -d public -b deploy",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
