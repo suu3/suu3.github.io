@@ -2,12 +2,12 @@ name: Gatsby Publish
 on:
   pull_request:
     branches:
-      - master
+      - develop
     paths-ignore:
       - "**/README.md"
   push:
     branches:
-      - master
+      - develop
     paths-ignore:
       - "**/README.md"
 jobs:
