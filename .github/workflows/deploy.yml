@@ -17,7 +17,7 @@ jobs:
           node-version: "18.x"
       - uses: pnpm/action-setup@v2
         with:
-          version: 8z
+          version: 8
       - name: Install dependencies
         run: pnpm install
       - name: Build
