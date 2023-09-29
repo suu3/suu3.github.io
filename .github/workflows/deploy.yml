@@ -1,11 +1,9 @@
 name: Gh-pages deploy
 on:
   push:
-    branches:
-      - master
+    branches: [main, develop]
   pull_request:
-    branches:
-      - master
+    branches: [main, develop]
 jobs:
   build:
     runs-on: ubuntu-latest
