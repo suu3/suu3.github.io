@@ -1,22 +1,32 @@
-name: Gatsby Publish
+name: build gatsby
 on:
-  pull_request:
-    branches:
-      - develop
-    paths-ignore:
-      - "**/README.md"
   push:
     branches:
       - develop
-    paths-ignore:
-      - "**/README.md"
+  pull_request:
+    branches:
+      - develop
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages
-          skip-publish: false
+          node-version: "18.x"
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm clean && pnpm build
+        env:
+          NODE_ENV: production
+      - uses: peaceiris/actions-gh-pages@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
