@@ -23,13 +23,21 @@ export const pageQuery = graphql`
         title
       }
     }
-    allPostsInfo: allMarkdownRemark {
+    allCategoriesInfo: allMarkdownRemark {
       totalCount
       group(field: { frontmatter: { category: SELECT } }) {
         fieldValue
         totalCount
       }
     }
+    allTagsInfo: allMarkdownRemark {
+      totalCount
+      group(field: { frontmatter: { tag: SELECT } }) {
+        fieldValue
+        totalCount
+      }
+    }
+
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
       limit: $limit

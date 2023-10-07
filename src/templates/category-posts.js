@@ -17,9 +17,18 @@ export const pageQuery = graphql`
         title
       }
     }
-    allPostsInfo: allMarkdownRemark {
+    allCategoriesInfo: allMarkdownRemark {
       totalCount
       group(field: { frontmatter: { category: SELECT } }) {
+        fieldValue
+        totalCount
+      }
+    }
+    allTagsInfo: allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: $category } } }
+    ) {
+      totalCount
+      group(field: { frontmatter: { tag: SELECT } }) {
         fieldValue
         totalCount
       }

@@ -7,11 +7,13 @@ import CategoryMenu from "./category-menu"
 import TransitionMain from "./transition-main"
 import { POST_PER_PAGE } from "../../constants/page"
 import { paginationCls } from "./post-list-template.module.css"
+import Badge from "../badge"
 
 const PostListTemplate = ({ data, location, pageContext }) => {
   const { currentPage, totalCount } = pageContext
-  const categories = data.allPostsInfo
+  const categories = data.allCategoriesInfo
   const posts = data.allMarkdownRemark.nodes
+  const tags = data.allTagsInfo
 
   React.useEffect(() => {
     const pathname =
@@ -66,6 +68,11 @@ const PostListTemplate = ({ data, location, pageContext }) => {
       {categories && (
         <CategoryMenu pathname={location.pathname} categories={categories} />
       )}
+      <aside>
+        {tags.group.map(({ fieldValue, totalCount }) => (
+          <Badge key={fieldValue}>{`${fieldValue} (${totalCount})`}</Badge>
+        ))}
+      </aside>
       <TransitionMain>
         <ol style={{ listStyle: `none` }}>{renderPosts}</ol>
       </TransitionMain>

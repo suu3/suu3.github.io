@@ -79,7 +79,7 @@ const BlogPostTemplate = ({
           </ul>
         </nav>
         <Utterances />
-      </TransitionMain>{" "}
+      </TransitionMain>
     </Layout>
   )
 }
