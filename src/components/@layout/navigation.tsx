@@ -46,7 +46,7 @@ const Navigation = () => {
               layout="fixed"
               formats={["auto", "webp", "avif"]}
               placeholder="blurred"
-              src="../../images/icon.png"
+              src="../../../static/images/icon.png"
               width={35}
               height={35}
               quality={95}
