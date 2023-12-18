@@ -23,7 +23,7 @@ pnpm run deploy
     .
     ├── node_modules
     └── blog
-        └── @Prviate :비공개 게시물
+        └── @Private :비공개 게시물 => 대신 포스트는 따로 노션에 관리. (어드민을 둘 생각이 없으므로)
         └── ...
     ├── src
     ├── .gitignore
