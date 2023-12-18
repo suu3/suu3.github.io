@@ -12,3 +12,27 @@
     list-style: none;
   }
 }
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: var(--spacing-5);
+}
+
+.main {
+  width: 100%;
+
+  > ol > li {
+    margin-bottom: var(--spacing-10);
+  }
+}
+
+.side-menu {
+  width: 25%;
+
+  /* Media queries */
+  @media (max-width: 60rem) {
+    display: none;
+  }
+}

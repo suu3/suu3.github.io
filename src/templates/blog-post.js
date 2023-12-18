@@ -53,6 +53,7 @@ const BlogPostTemplate = ({
           <Bio />
         </footer> */}
         </article>
+        <Utterances />
         <nav className={blogPostNav}>
           <ul>
             <li>
@@ -78,7 +79,6 @@ const BlogPostTemplate = ({
             </li>
           </ul>
         </nav>
-        <Utterances />
       </TransitionMain>
     </Layout>
   )

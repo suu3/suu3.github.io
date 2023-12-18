@@ -93,6 +93,7 @@
 }
 
 html {
+  overflow-x: hidden;
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
@@ -285,9 +286,9 @@ a:focus {
   margin-bottom: var(--spacing-20);
 }
 
-.global-header {
+/* .global-header {
   margin-bottom: var(--spacing-8);
-}
+} */
 
 .header-link-home {
   font-weight: var(--fontWeight-bold);
@@ -301,11 +302,11 @@ a:focus {
 }
 
 /* Media queries */
-@media (max-width: 60rem) {
+/* @media (max-width: 60rem) {
   .global-wrapper {
     padding: var(--spacing-10) var(--spacing-3) var(--spacing-3);
   }
-}
+} */
 
 @media (max-width: 42rem) {
   blockquote {

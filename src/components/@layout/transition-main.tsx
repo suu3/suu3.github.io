@@ -1,9 +1,16 @@
 import React, { ReactNode } from "react"
 import { motion } from "framer-motion"
 
-const TransitionMain = ({ children }: { children: ReactNode }) => {
+const TransitionMain = ({
+  children,
+  className,
+}: {
+  children: ReactNode
+  className?: string
+}) => {
   return (
     <motion.main
+      className={className}
       initial={{
         opacity: 0,
         x: -200,

@@ -52,7 +52,7 @@ const Navigation = () => {
               quality={95}
               alt="logo"
             />
-            <SplitText words="Suu Blog" />
+            <SplitText words="Suu3 Blog" />
           </Link>
         </li>
         <li>
