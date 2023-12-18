@@ -17,7 +17,7 @@ const CategoryMenu = ({ categories = {}, pathname = "" }) => {
   return (
     <ul className={list}>
       <Link
-        to="home/page/1"
+        to="/home/page/1"
         onClick={() => handleClickMenu(withPrefix("/home"))}
       >
         <li className={listClassName("/home")}>All ({totalCount})</li>
