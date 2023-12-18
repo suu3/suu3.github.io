@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
-        run: pnpm clean && pnpm build
+        run: pnpm clean && pnpm run build
         env:
           NODE_ENV: production
       - uses: peaceiris/actions-gh-pages@v2
