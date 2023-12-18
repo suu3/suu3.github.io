@@ -20,9 +20,9 @@ const PostListTemplate = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.nodes
   const tags = data.allTagsInfo
 
+  const pathname = location.pathname.split("/page/")[0].replace("/blog", "")
   const handlePageChange = (page: number) => {
-    const pathname = location.pathname.split("/page/")[0]
-    navigate(withPrefix(`${pathname}/page/${page}/`))
+    navigate(`${pathname}/page/${page}/`)
   }
 
   const textItemRender = (current, type, element) => {
