@@ -61,7 +61,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const numPages = Math.ceil(categoryPosts.length / postsPerPage)
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: i === 0 ? `/${category}` : `/${category}/${i + 1}`,
+        path: `/${category}/page/${i + 1}/`,
         component: path.resolve(`./src/templates/category-posts.js`), // Just like `createPage()`\
         context: {
           limit: postsPerPage,
@@ -79,7 +79,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/home` : `/home/${i + 1}`,
+      path: `/home/page/${i + 1}/`,
       component: path.resolve(`./src/templates/home.tsx`), // Just like `createPage()`\
       context: {
         limit: postsPerPage,

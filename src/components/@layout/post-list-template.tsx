@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql, navigate } from "gatsby"
+import { Link, graphql, navigate, withPrefix } from "gatsby"
 import Layout from "../@core/layout"
 import PostListItem from "../post-list-item"
 import Pagination from "rc-pagination"
@@ -20,20 +20,9 @@ const PostListTemplate = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.nodes
   const tags = data.allTagsInfo
 
-  React.useEffect(() => {
-    const pathname =
-      currentPage === 1
-        ? location.pathname.split("/").slice(1).join("/")
-        : location.pathname.split("/").slice(2, -1).join("/")
-    console.log("pagination", location.pathname.split("/"))
-  }, [location.pathname])
-
   const handlePageChange = (page: number) => {
-    const pathname =
-      currentPage === 1
-        ? location.pathname.split("/").slice(1).join("/")
-        : location.pathname.split("/").slice(2, -1).join("/")
-    navigate(page === 1 ? `/${pathname}` : `/${pathname}/${page}`)
+    const pathname = location.pathname.split("/page/")[0]
+    navigate(withPrefix(`${pathname}/page/${page}/`))
   }
 
   const textItemRender = (current, type, element) => {
@@ -43,6 +32,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
     if (type === "next") {
       return "→"
     }
+
     return element
   }
   const renderPosts =
@@ -93,8 +83,8 @@ const PostListTemplate = ({ data, location, pageContext }) => {
           <Pagination
             itemRender={textItemRender}
             current={currentPage}
-            onChange={handlePageChange}
             className={paginationCls}
+            onChange={handlePageChange}
             total={totalCount}
             pageSize={POST_PER_PAGE}
             jumpNextIcon={"..."}

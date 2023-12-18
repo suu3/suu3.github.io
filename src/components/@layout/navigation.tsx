@@ -40,7 +40,7 @@ const Navigation = () => {
     <nav className={clsx(wrapper, !showNavigation && hide)}>
       <ul className={inner}>
         <li>
-          <Link to="/home">
+          <Link to="/home/page/1">
             <StaticImage
               className={logo}
               layout="fixed"

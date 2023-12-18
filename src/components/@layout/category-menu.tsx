@@ -14,19 +14,18 @@ const CategoryMenu = ({ categories = {}, pathname = "" }) => {
     setClicked(category)
   }
 
-  useEffect(() => {
-    console.log("category menu", pathname.split("/"))
-  }, [pathname])
-
   return (
     <ul className={list}>
-      <Link to="/home" onClick={() => handleClickMenu(withPrefix("/home"))}>
+      <Link
+        to="home/page/1"
+        onClick={() => handleClickMenu(withPrefix("/home"))}
+      >
         <li className={listClassName("/home")}>All ({totalCount})</li>
       </Link>
       {group.map(({ fieldValue, totalCount }: string) => (
         <Link
           key={fieldValue}
-          to={`/${fieldValue}`}
+          to={`/${fieldValue}/page/1`}
           onClick={() => handleClickMenu(withPrefix(`/${fieldValue}`))}
         >
           <li className={listClassName(`/${fieldValue}`)}>

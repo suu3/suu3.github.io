@@ -16,7 +16,7 @@ module.exports = {
       summary: `Suu3 Blog`,
     },
     description: `@suu3의 기술 블로그`,
-    siteUrl: `https://suu3.github.io/blog/home`,
+    siteUrl: `https://suu3.github.io/blog/home/page/1`,
     // social: {
     //   twitter: `kylemathews`,
     // },
@@ -115,7 +115,7 @@ module.exports = {
       options: {
         name: `Suu3 Blog`,
         short_name: `Suu3 Blog`,
-        start_url: `/home`,
+        start_url: `/home/page/1`,
         background_color: `#efefef`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
