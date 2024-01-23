@@ -16,7 +16,7 @@ const blogPost = path.resolve(`./src/templates/blog-post.js`)
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  // const { createRedirect } = actions
+  const { createRedirect } = actions
   const { createPage } = actions
 
   // Get all markdown blog posts sorted by date
@@ -111,10 +111,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
-  // createRedirect({
-  //   fromPath: `/`,
-  //   toPath: `/home`,
-  // })
+  createRedirect(
+    {
+      fromPath: `/`,
+      toPath: `/home/page/1`,
+    },
+    {
+      fromPath: `/home`,
+      toPath: `/home/page/1`,
+    }
+  )
 }
 
 /**
