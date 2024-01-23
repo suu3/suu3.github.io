@@ -9,7 +9,7 @@ import "./src/styles/normalize.css"
 import "./src/styles/global.css"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import "./src/styles/prism-atom-dark.css"
 // import { ReactComponent as Background } from "./static/images/background.svg"
 
 export const wrapPageElement = ({ element }) => (

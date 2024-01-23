@@ -14,7 +14,7 @@ const Arrow = ({
   className,
   width = 20,
   height = 20,
-  color = "var(--color-primary)",
+  color = "var(--color-accent)",
 }: ArrowProps) => {
   return (
     <div className={clsx(styles["arrow"], styles[direction], className)}>

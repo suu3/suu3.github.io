@@ -15,8 +15,8 @@
   display: inline-block;
   /* width: calc(var(--arrow-width) * 3);
   height: calc(var(--arrow-width) * 3); */
-  /* border-bottom: var(--arrow-width) solid var(--color-primary);
-  border-right: var(--arrow-width) solid var(--color-primary);
+  /* border-bottom: var(--arrow-width) solid var(--color-accent);
+  border-right: var(--arrow-width) solid var(--color-accent);
    */
   transform: rotate(90deg);
   margin: calc(var(--arrow-width) * -2.2);

@@ -7,7 +7,7 @@ interface BadgeProps {
 
 const colors = [
   {
-    background: "var(--color-primary)",
+    background: "var(--color-accent)",
     color: "var(--color-heading-black)",
   },
 

@@ -9,6 +9,7 @@ import { POST_PER_PAGE } from "../../constants/page"
 import {
   main,
   mainWrapper,
+  ol,
   sideMenu,
   paginationCls,
 } from "./post-list-template.module.css"
@@ -65,7 +66,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
       )}
 
       <div className={mainWrapper}>
-        <aside className={sideMenu}>
+        {/* <aside className={sideMenu}>
           <h3
             style={{
               padding: "0 8px 10px 8px",
@@ -77,9 +78,11 @@ const PostListTemplate = ({ data, location, pageContext }) => {
           {tags.group.map(({ fieldValue, totalCount }) => (
             <Badge key={fieldValue}>{`${fieldValue} (${totalCount})`}</Badge>
           ))}
-        </aside>
+        </aside> */}
         <TransitionMain className={main}>
-          <ol style={{ listStyle: `none` }}>{renderPosts}</ol>
+          <ol className={ol} style={{ listStyle: `none` }}>
+            {renderPosts}
+          </ol>
           <Pagination
             itemRender={textItemRender}
             current={currentPage}
