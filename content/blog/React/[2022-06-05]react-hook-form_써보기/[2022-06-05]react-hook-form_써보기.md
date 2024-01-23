@@ -3,7 +3,7 @@ title: "[React] React Hook Form 써보기"
 date: "2022-06-05"
 description: "React Hook Form을 사용해보았다"
 tag: ["react", "react-hook-form"]
-category: “React”
+category: React
 ---
 
 ![Untitled](./1.png)
