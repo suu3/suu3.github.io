@@ -7,10 +7,8 @@ const CategoryMenu = ({ categories = {}, pathname = "" }) => {
   const [clicked, setClicked] = useState(pathname.split("/page/")[0])
   const { totalCount, group } = categories
 
-  const listClassName = (category: string) => {
-    console.log("clicked", clicked, "category", withPrefix(category))
-    return clicked === withPrefix(category) ? active : inactive
-  }
+  const listClassName = (category: string) =>
+    clicked === withPrefix(category) ? active : inactive
 
   const handleClickMenu = (category: string) => {
     setClicked(category)
