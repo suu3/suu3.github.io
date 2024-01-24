@@ -111,16 +111,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
-  createRedirect(
-    {
-      fromPath: `/`,
-      toPath: `/home/page/1`,
-    },
-    {
-      fromPath: `/home`,
-      toPath: `/home/page/1`,
-    }
-  )
+  createRedirect({
+    fromPath: `/`,
+    toPath: `/home/page/1`,
+  })
+
+  createRedirect({
+    fromPath: `/home`,
+    toPath: `/home/page/1`,
+  })
 }
 
 /**
