@@ -10,7 +10,7 @@ category: React
 
 이런걸 만들어본다
 
-### **0. 들어가기 앞서**
+## **0. 들어가기 앞서**
 
 React 문서 Form 파트에는 다음과 같은 문항이 있다.
 
@@ -18,25 +18,14 @@ React 문서 Form 파트에는 다음과 같은 문항이 있다.
 
 마침 회원가입 창 폼 유효성 검사 처리를 하지 않았기에 Formik을 써봐야겠다고 생각을 했으나
 
-**[https://nyeongnyeong.tistory.com/299](https://nyeongnyeong.tistory.com/299)**
+Formik과 React Hook Form을 비교한 글[https://nyeongnyeong.tistory.com/299](https://nyeongnyeong.tistory.com/299)을 읽고 React Hook Form을 쓰기로 결정!
 
-[
-[React] Form Validation (Formik VS React Hook Form)
-Validation 이란? 서버에 데이터를 제출하기 전에 양식이 올바른지 확인하는 과정 사용자가 데이터를 목적지로 보내기 전에, 올바를 데이터를 입력했는지 유효성을 체크해주는 것. Client Validation rea
-nyeongnyeong.tistory.com](https://nyeongnyeong.tistory.com/299)
+또한, react-hook-form 문서(**[https://react-hook-form.com/kr/get-started](https://react-hook-form.com/kr/get-started)**
+)가 정말 잘 정리되어있다. 한국어도 지원해주고, 버전별 & TS JS 별 코드도 제공해준다.
 
-위의 Formik과 React Hook Form을 비교한 글을 읽고 React Hook Form을 쓰기로 결정!
+문서 보고 바로 적용할 수 있을 정도로 러닝커브가 낮다고 느꼈다.
 
-**[https://react-hook-form.com/kr/get-started](https://react-hook-form.com/kr/get-started)**
-
-[
-시작하기
-Performant, flexible and extensible forms with easy-to-use validation.
-react-hook-form.com](https://react-hook-form.com/kr/get-started)
-
-문서가 정말 잘 정리되어있다. 한국어도 지원해주고, 버전별 & TS JS 별 코드도 제공해준다.
-
-오늘 문서 좀 보고 바로 적용할 수 있을 정도로 러닝커브가 낮다고 느꼈다.
+## React Hook Form 살펴보기
 
 ```
 npm install react-hook-form
@@ -224,7 +213,7 @@ getValues랑 다른 점은 getValues는 useEffect의 dependency array에 넣어�
 
 나는 input들이 전부 입력되면 버튼에 색이 들어오게 만들어주고 싶었기 때문에 watch를 사용했다.
 
-### 사용 후기
+## 사용 후기
 
 쓰기도 쉽고 원하는대로 유효성 검사 만들 수도 있고 좋았다.
 
