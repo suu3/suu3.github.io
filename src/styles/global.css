@@ -81,17 +81,15 @@
   box-sizing: border-box;
 }
 
-pre::-webkit-scrollbar,
 *::-webkit-scrollbar {
   width: 0.3rem;
+  height: 0.3rem;
   background-color: var(--background-color);
 }
-pre::-webkit-scrollbar-thumb,
 *::-webkit-scrollbar-thumb {
   background-color: var(--color-accent);
   border-radius: 0.5rem;
 }
-pre::-webkit-scrollbar-track,
 *::-webkit-scrollbar-track {
   background-color: var(--background-color);
 }
