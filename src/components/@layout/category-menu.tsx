@@ -4,7 +4,7 @@ import { list, active, inactive } from "./category-menu.module.css"
 import { withPrefix } from "gatsby"
 
 const CategoryMenu = ({ categories = {}, pathname = "" }) => {
-  const [clicked, setClicked] = useState(pathname.split("/page/")[0])
+  const [clicked, setClicked] = useState(decodeURI(pathname).split("/page/")[0])
   const { totalCount, group } = categories
 
   const listClassName = (category: string) =>
