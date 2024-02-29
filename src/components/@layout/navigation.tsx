@@ -11,30 +11,30 @@ const Navigation = () => {
   const [showNavigation, setShowNavigation] = useState(true)
   const [prevScrollPos, setPrevScrollPos] = useState(0)
 
-  useEffect(() => {
-    const handleScroll = throttle(() => {
-      const currentScrollPos = window.scrollY
+  // useEffect(() => {
+  //   const handleScroll = throttle(() => {
+  //     const currentScrollPos = window.scrollY
 
-      if (prevScrollPos > currentScrollPos) {
-        setShowNavigation(true)
-      } else {
-        setShowNavigation(false)
-      }
+  //     if (prevScrollPos > currentScrollPos) {
+  //       setShowNavigation(true)
+  //     } else {
+  //       setShowNavigation(false)
+  //     }
 
-      setPrevScrollPos(currentScrollPos)
-    }, 300)
+  //     setPrevScrollPos(currentScrollPos)
+  //   }, 300)
 
-    if (typeof window !== "undefined") {
-      setPrevScrollPos(window.scrollY)
-      window.addEventListener("scroll", handleScroll)
-    }
+  //   if (typeof window !== "undefined") {
+  //     setPrevScrollPos(window.scrollY)
+  //     window.addEventListener("scroll", handleScroll)
+  //   }
 
-    return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("scroll", handleScroll)
-      }
-    }
-  }, [prevScrollPos])
+  //   return () => {
+  //     if (typeof window !== "undefined") {
+  //       window.removeEventListener("scroll", handleScroll)
+  //     }
+  //   }
+  // }, [prevScrollPos])
 
   return (
     <nav className={clsx(wrapper, !showNavigation && hide)}>

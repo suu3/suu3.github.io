@@ -55,5 +55,5 @@ export const shouldUpdateScroll = ({
   //   window.setTimeout(() => window.scrollTo(...savedPosition), TRANSITION_DELAY)
   // }
 
-  return false
+  return true
 }

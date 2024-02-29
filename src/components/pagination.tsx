@@ -17,6 +17,7 @@ const Pagination = ({
 }: PaginationProps) => {
   const isFirstPage = currentPage === 1
   const isLastPage = currentPage === totalPages
+  console.log(currentPage, totalPages)
   const ellipsis = "..."
   const halfPagesToShow = Math.floor(pagesToShow / 2) // 5 => 2, 6 => 3
 
