@@ -9,7 +9,7 @@ const TableContents = ({ content = "" }: TableContentsProps) => {
   return (
     <aside className={wrapper}>
       <div className={inner}>
-        {/* <header className={header}>INDEX</header> */}
+        <header className={header}>Index</header>
 
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </div>
