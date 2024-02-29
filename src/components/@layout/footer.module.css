@@ -1,0 +1,9 @@
+.footer-cls {
+  border-top: 1px solid #2a2b31;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 36px 10px 64px 10px;
+}

@@ -1,8 +1,9 @@
 import * as React from "react"
-import { Link, graphql, navigate, withPrefix } from "gatsby"
+import { Link, navigate } from "gatsby"
 import Layout from "../@core/layout"
 import PostListItem from "../post-list-item"
-import Pagination from "rc-pagination"
+// import Pagination from "rc-pagination"
+import Pagination from "../pagination"
 import CategoryMenu from "./category-menu"
 import TransitionMain from "./transition-main"
 import { POST_PER_PAGE } from "../../constants/page"
@@ -13,7 +14,6 @@ import {
   sideMenu,
   paginationCls,
 } from "./post-list-template.module.css"
-import Badge from "../badge"
 
 const PostListTemplate = ({ data, location, pageContext }) => {
   const { currentPage, totalCount } = pageContext
@@ -85,6 +85,11 @@ const PostListTemplate = ({ data, location, pageContext }) => {
           <ol className={ol}>{renderPosts}</ol>
           <hr />
           <Pagination
+            onPageChange={handlePageChange}
+            currentPage={currentPage}
+            totalPages={totalCount / POST_PER_PAGE}
+          />
+          {/* <Pagination
             itemRender={textItemRender}
             current={currentPage}
             className={paginationCls}
@@ -93,7 +98,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
             pageSize={POST_PER_PAGE}
             jumpNextIcon={"..."}
             jumpPrevIcon={"..."}
-          />
+          /> */}
         </TransitionMain>
       </div>
     </Layout>
