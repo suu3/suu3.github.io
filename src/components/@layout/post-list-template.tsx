@@ -87,7 +87,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
           <Pagination
             onPageChange={handlePageChange}
             currentPage={currentPage}
-            totalPages={Number((totalCount / POST_PER_PAGE + 1).toFixed(0))}
+            totalPages={Math.ceil(totalCount / POST_PER_PAGE)}
           />
           {/* <Pagination
             itemRender={textItemRender}
