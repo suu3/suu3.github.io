@@ -25,7 +25,7 @@ const BlogPostTemplate = ({
 
   const badges = post.frontmatter.tag?.map(tag => (
     <span className={badgeCls} key={tag}>
-      {tag}
+      #{tag}
     </span>
   ))
 
