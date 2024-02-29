@@ -44,6 +44,9 @@ dependencies:
   gatsby-remark-autolink-headers:
     specifier: ^6.12.0
     version: 6.12.0(gatsby@5.11.0)(react-dom@18.1.0)(react@18.1.0)
+  gatsby-remark-copy-relative-linked-files:
+    specifier: ^1.5.0
+    version: 1.5.0(gatsby@5.11.0)
   gatsby-remark-images:
     specifier: ^7.11.0
     version: 7.11.0(gatsby-plugin-sharp@5.11.0)(gatsby@5.11.0)
@@ -4698,6 +4701,11 @@ packages:
   /entities@2.2.0:
     resolution: {integrity: sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==}
 
+  /entities@3.0.1:
+    resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==}
+    engines: {node: '>=0.12'}
+    dev: false
+
   /entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
@@ -5585,6 +5593,15 @@ packages:
   /fs-exists-cached@1.0.0:
     resolution: {integrity: sha512-kSxoARUDn4F2RPXX48UXnaFKwVU7Ivd/6qpzZL29MCDmr9sTvybv4gFCp+qaI4fM9m0z9fgz/yJvi56GAz+BZg==}
 
+  /fs-extra@10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+
   /fs-extra@11.1.1:
     resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
     engines: {node: '>=14.14'}
@@ -5999,6 +6016,19 @@ packages:
       react: 18.1.0
       react-dom: 18.1.0(react@18.1.0)
       unist-util-visit: 2.0.3
+    dev: false
+
+  /gatsby-remark-copy-relative-linked-files@1.5.0(gatsby@5.11.0):
+    resolution: {integrity: sha512-danLMYTIj8RexTX6n0xyFYnu6Ci70QgBY5pXr/PsU/Rhprp2TjevG7bIACmXla+AMB9D1xlS2R6RvJJVfyv2yQ==}
+    engines: {node: '>= 14.15.0'}
+    peerDependencies:
+      gatsby: ^4.0.0
+    dependencies:
+      fs-extra: 10.1.0
+      gatsby: 5.11.0(babel-eslint@10.1.0)(react-dom@18.1.0)(react@18.1.0)(typescript@5.1.6)
+      htmlparser2: 7.2.0
+      unist-util-visit: 2.0.3
+      upath: 2.0.1
     dev: false
 
   /gatsby-remark-images@7.11.0(gatsby-plugin-sharp@5.11.0)(gatsby@5.11.0):
@@ -6781,6 +6811,15 @@ packages:
       domhandler: 4.3.1
       domutils: 2.8.0
       entities: 2.2.0
+
+  /htmlparser2@7.2.0:
+    resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 4.3.1
+      domutils: 2.8.0
+      entities: 3.0.1
+    dev: false
 
   /htmlparser2@8.0.2:
     resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
@@ -10405,6 +10444,11 @@ packages:
   /unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
+
+  /upath@2.0.1:
+    resolution: {integrity: sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==}
+    engines: {node: '>=4'}
+    dev: false
 
   /update-browserslist-db@1.0.11(browserslist@4.21.9):
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}

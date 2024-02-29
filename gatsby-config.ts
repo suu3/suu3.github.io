@@ -54,6 +54,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          "gatsby-remark-copy-relative-linked-files",
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs", // should be placed after `gatsby-remark-autolink-headers`
         ],
