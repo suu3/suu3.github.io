@@ -10,10 +10,10 @@
 module.exports = {
   pathPrefix: "/blog",
   siteMetadata: {
-    title: `Suu3 Blog`,
+    title: `Suu.Blog`,
     author: {
       name: `suu3`,
-      summary: `Suu3 Blog`,
+      summary: `Suu.Blog`,
     },
     description: `@suu3의 기술 블로그`,
     siteUrl: `https://suu3.github.io/blog/home/page/1`,
