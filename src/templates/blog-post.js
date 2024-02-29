@@ -11,9 +11,8 @@ import TableContents from "../components/table-contents"
 import {
   blogPost,
   blogPostNav,
-  category,
+  badgesCls,
   badgeCls,
-  dateCls,
   leftBox,
   rightBox,
 } from "./blog-post.module.css"
@@ -24,9 +23,11 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
-  const badges = post.frontmatter.tag?.map(tag => {
-    return <Badge key={tag}>{tag}</Badge>
-  })
+  const badges = post.frontmatter.tag?.map(tag => (
+    <span className={badgeCls} key={tag}>
+      {tag}
+    </span>
+  ))
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -38,17 +39,18 @@ const BlogPostTemplate = ({
           itemType="http://schema.org/Article"
         >
           <header>
-            <p className={category}>{post.frontmatter.category}</p>
+            <small>
+              <p>{post.frontmatter.date}</p>
+              <div />
+              <p>{post.frontmatter.category}</p>
+            </small>
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <p className={dateCls}>{post.frontmatter.date}</p>
-            <p className={badgeCls}>{badges}</p>
-            <hr />
+            <p className={badgesCls}>{badges}</p>
           </header>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
           />
-          <hr />
           {/* <footer>
           <Bio />
         </footer> */}
@@ -60,20 +62,18 @@ const BlogPostTemplate = ({
               {previous && (
                 <Link className={leftBox} to={previous.fields.slug} rel="prev">
                   <span>
-                    <span>←</span> 이전 글
+                    {/* <span>←</span> */}
+                    이전 글
                   </span>
-
-                  {previous.frontmatter.title}
+                  <p>{previous.frontmatter.title}</p>
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link className={rightBox} to={next.fields.slug} rel="next">
-                  <span>
-                    다음 글 <span>→</span>
-                  </span>
-                  {next.frontmatter.title}
+                  <span>다음 글{/* <span>→</span> */}</span>
+                  <p>{next.frontmatter.title}</p>
                 </Link>
               )}
             </li>
