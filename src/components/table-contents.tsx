@@ -6,12 +6,14 @@ interface TableContentsProps {
 }
 
 const TableContents = ({ content = "" }: TableContentsProps) => {
+
+  if(!content) return null;
   return (
     <aside className={wrapper}>
       <div className={inner}>
         <header className={header}>Index</header>
 
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <div dangerouslySetInnerHTML={{ __html: content }} />}
       </div>
     </aside>
   )
