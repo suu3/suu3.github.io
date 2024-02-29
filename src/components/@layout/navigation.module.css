@@ -15,9 +15,9 @@
   margin: 0;
 
   height: var(--navigation-height);
-  background: var(--background-color);
+  background: #f3f0ec;
   /*backdrop-filter: blur(10px);*/
-  /* border-bottom: 1px solid var(--color-text-light); */
+  border-bottom: 1px solid #2a2b31;
   /* box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px, rgba(0, 0, 0, 1) 0px 1px 2px; */
   transition: transform 0.3s linear;
 
@@ -64,5 +64,6 @@
 }
 
 .logo {
-  margin-right: 0.3rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
 }

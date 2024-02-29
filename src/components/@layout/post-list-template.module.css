@@ -23,8 +23,37 @@
 .main {
   width: 100%;
 
-  > ol > li {
-    margin-bottom: var(--spacing-10);
+  h1 {
+    margin: 16px;
+    font-family: MONOSPACE;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  hr {
+    color: #2a2b31;
+  }
+}
+
+.ol {
+  > li {
+    margin-bottom: 0;
+  }
+
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 34px;
+  column-gap: 24px;
+
+  margin-bottom: 122px;
+
+  @media (max-width: 60rem) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
   }
 }
 

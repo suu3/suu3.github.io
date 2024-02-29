@@ -3,13 +3,14 @@ import {
   item,
   box,
   categoryCls,
-  arrow,
+  descriptionCls,
+  badgesCls,
   inner,
-  topBar,
+  badge,
 } from "./post-list-item.module.css"
 // import Arrow from "./arrow"
 import Badge from "./badge"
-import { withPrefix } from "gatsby"
+
 interface PostListItemProps {
   title: string
   date: string
@@ -25,30 +26,32 @@ const PostListItem = ({
   category,
   tag = [],
 }: PostListItemProps) => {
-  const badges = tag?.map(item => {
-    return <Badge key={item}>{item}</Badge>
-  })
+  const badges = tag?.map(item => (
+    <span className={badge} key={item}>
+      #{item}
+    </span>
+  ))
 
   return (
     <article className={box} itemScope itemType="http://schema.org/Article">
-      <div
+      {category && <header className={categoryCls}>{category}</header>}
+      {/* <div
         className={topBar}
         style={{
           backgroundImage: `url(${withPrefix("/images/grid-vert-2.svg")})`,
         }}
-      />
+      /> */}
       {/* <Arrow direction="right" className={arrow} /> */}
-      <span className={arrow}>→</span>
+      {/* <span className={arrow}>→</span> */}
       <div className={inner}>
-        {category && <p className={categoryCls}>{category}</p>}
-        {badges && <div>{badges}</div>}
+        {badges && <div className={badgesCls}>{badges}</div>}
         <div className={item}>
           <h2>
             <span itemProp="headline">{title}</span>
           </h2>
-          <small>{date}</small>
           <section>
             <p
+              className={descriptionCls}
               dangerouslySetInnerHTML={{
                 __html: description,
               }}
@@ -57,6 +60,7 @@ const PostListItem = ({
           </section>
         </div>
       </div>
+      <small>{date}</small>
     </article>
   )
 }

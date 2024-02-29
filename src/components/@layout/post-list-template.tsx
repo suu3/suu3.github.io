@@ -80,9 +80,10 @@ const PostListTemplate = ({ data, location, pageContext }) => {
           ))}
         </aside> */}
         <TransitionMain className={main}>
-          <ol className={ol} style={{ listStyle: `none` }}>
-            {renderPosts}
-          </ol>
+          <h1>Latest</h1>
+          <hr />
+          <ol className={ol}>{renderPosts}</ol>
+          <hr />
           <Pagination
             itemRender={textItemRender}
             current={currentPage}
