@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { SplitText } from "../split-text"
 import clsx from "clsx"
 import { ReactComponent as Github } from "/static/images/github.svg"
-import throttle from "lodash/throttle"
+// import throttle from "lodash/throttle"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Navigation = () => {

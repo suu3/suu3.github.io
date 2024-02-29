@@ -281,7 +281,7 @@ a:focus {
   /* background-color: var(--background-color); */
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-16) 0 var(--spacing-10);
+  padding: var(--spacing-8) 0 var(--spacing-10);
 
   position: relative;
 }

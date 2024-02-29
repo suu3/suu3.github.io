@@ -5,7 +5,7 @@
 .wrapper {
   transform: 0;
 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -41,6 +41,7 @@
 }
 
 .inner li {
+  list-style: none;
   /* display: inline-block; */
   margin: 0;
 
