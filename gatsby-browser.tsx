@@ -12,22 +12,22 @@ import "./src/styles/global.css"
 import "./src/styles/prism-atom-dark.css"
 // import { ReactComponent as Background } from "./static/images/background.svg"
 
-export const wrapPageElement = ({ element }) => (
-  <>
-    {/* <Background
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        margin: "auto",
-        zIndex: -1,
-      }}
-    /> */}
+// export const wrapPageElement = ({ element }) => (
+//   <>
+//     {/* <Background
+//       style={{
+//         position: "fixed",
+//         top: 0,
+//         left: 0,
+//         right: 0,
+//         margin: "auto",
+//         zIndex: -1,
+//       }}
+//     /> */}
 
-    <AnimatePresence mode="wait">{element}</AnimatePresence>
-  </>
-)
+//     <AnimatePresence mode="wait">{element}</AnimatePresence>
+//   </>
+// )
 
 // must be on Gatsby v2.28 or later -- previous versions had a bug with getSavedScrollPosition that was resolved with v2.28
 // wait until page exit animation has completed before updating scroll position
