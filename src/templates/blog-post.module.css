@@ -9,6 +9,10 @@
     padding: 34px;
 
     .left {
+      position: sticky;
+      top: calc(60px + 10px);
+      height: max-content;
+
       display: flex;
       flex-direction: column;
 
@@ -36,6 +40,7 @@
     }
   }
 }
+
 .main-article {
   > section {
     border: 1px solid var(--color-bg-surface-02);
@@ -69,6 +74,7 @@ header small {
     margin: 0;
   }
 }
+
 .blog-post > header {
   border-bottom: 1px solid var(--color-bg-surface-02);
   padding: 35px 10px;

@@ -14,13 +14,9 @@
 
 .inner {
   /* position: fixed; */
-  position: sticky;
   min-width: 288px;
   max-height: calc(100vh - 200px);
   overflow: auto;
-
-  top: calc(60px + 10px);
-  left: var(--spacing-10);
 
   list-style: none;
 
