@@ -85,10 +85,6 @@
   .img {
     transition: transform var(--transition-duration)
       var(--transition-timing-function);
-
-    img {
-      object-fit: cover;
-    }
   }
 }
 

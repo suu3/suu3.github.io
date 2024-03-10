@@ -48,7 +48,12 @@ const PostListItem = ({
         <div className={thumbnailCls}>
           <span>{category}</span>
           {thumbnailImg ? (
-            <GatsbyImage className={img} image={thumbnailImg} alt="" />
+            <GatsbyImage
+              className={img}
+              image={thumbnailImg}
+              alt=""
+              objectFit="cover"
+            />
           ) : (
             <StaticImage
               className={img}
