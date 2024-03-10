@@ -28,13 +28,13 @@ thumbnail: ./1.png
 
 먼저 패키지를 설치한다.
 
-```
+```python
 pip install django-allauth
 ```
 
 **1. settings.py**
 
-```
+```python
 INSTALLED_APPS = [
     ...
     'django.contrib.sites',
@@ -60,7 +60,7 @@ migrate를 해줘야한다.
 
 **2. urls.py**
 
-```
+```python
 ...
 urlpatterns = [
     ...
@@ -92,7 +92,7 @@ sites에는 127.0.0.1:8000를 추가한다.
 
 **4. html**
 
-```
+```python
 {% load socialaccount %}
 {% providers_media_js %}
 ...
@@ -126,7 +126,7 @@ sites에는 127.0.0.1:8000를 추가한다.
 
 ## **2. social-auth-app-django**
 
-```
+```python
 pip install social-auth-app-django
 ```
 
@@ -134,7 +134,7 @@ pip install social-auth-app-django
 
 **1. settings.py**
 
-```
+```python
 ...
 
 INSTALLED_APPS = [
@@ -174,7 +174,7 @@ env 설정 방법이 있는데 여기선 생략한다.
 
 **login/urls.py**
 
-```
+```python
 from django.urls import path, include
 
 ...
