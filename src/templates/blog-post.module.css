@@ -51,6 +51,10 @@
 
 .main-article {
   > section {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
     border: 1px solid var(--color-bg-surface-02);
     padding: 32px;
     margin-bottom: 24px;
@@ -180,7 +184,7 @@ header small {
     text-overflow: ellipsis;
   }
 }
--box {
+.left-box {
   /* box-shadow: -6px 6px 0px -1px var(--color-neutral-01); */
 
   &:hover {
@@ -195,17 +199,6 @@ header small {
   }
 }
 
-@keyframes move-left {
-  0% {
-    transform: translate(10px, 0);
-  }
-  50% {
-    transform: translate(20px, 0);
-  }
-  100% {
-    transform: translate(10px, 0);
-  }
-}
 @keyframes move-right {
   0% {
     transform: translate(-10px, 0);
