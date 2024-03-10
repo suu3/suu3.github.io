@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import TransitionMain from "../components/@layout/transition-main"
-import Utterances from "../components/@core/utterances"
+import TransitionMain from "../components/@layout/main"
+import Utterances from "../components/@layout/utterances"
 // import Bio from "../components/@layout/bio"
-import Layout from "../components/@core/layout"
-import Seo from "../components/@core/seo"
-import TableContents from "../components/table-contents"
+import Layout from "../components/@layout"
+import Seo from "../components/@layout/seo"
+import TableContents from "../components/@layout/tableOfContents"
 import { HOME_URL } from "../constants/links"
 import {
   wrapper,

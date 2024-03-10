@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import { wrapper, header, active, inactive } from "./category-menu.module.css"
 import { withPrefix } from "gatsby"
-import { HOME_URL } from "../../constants/links"
+import { HOME_URL } from "../../../constants/links"
 
 const CategoryMenu = ({ categories = {}, pathname = "" }) => {
   const [clicked, setClicked] = useState(decodeURI(pathname).split("/page/")[0])

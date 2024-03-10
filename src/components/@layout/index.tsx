@@ -1,6 +1,6 @@
 import * as React from "react"
-import Navigation from "../@layout/navigation"
-import Footer from "../@layout/footer"
+import Navigation from "./navigation"
+import Footer from "./footer"
 
 const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}`

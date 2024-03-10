@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react"
-import { wrapper, inner, hide, icon, logo } from "./navigation.module.css"
+import { wrapper, inner, hide, logo } from "./navigation.module.css"
 import { Link } from "gatsby"
-import { SplitText } from "../split-text"
+import { SplitText } from "../../split-text"
 import clsx from "clsx"
-import { ReactComponent as Github } from "/static/images/github.svg"
 // import throttle from "lodash/throttle"
 import { StaticImage } from "gatsby-plugin-image"
-import { HOME_URL } from "../../constants/links"
+import { HOME_URL } from "../../../constants/links"
 
 const Navigation = () => {
   const [showNavigation, setShowNavigation] = useState(true)
@@ -55,15 +54,6 @@ const Navigation = () => {
             />
             <SplitText words="Suu.Blog" />
           </Link>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/suu3"
-          >
-            <Github className={icon} />
-          </a>
         </li>
       </ul>
     </nav>

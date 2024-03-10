@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Link, navigate } from "gatsby"
-import Layout from "../@core/layout"
+import Layout from "../@layout"
 import PostListItem from "../post-list-item"
-// import Pagination from "rc-pagination"
 import Pagination from "../pagination"
-import CategoryMenu from "./category-menu"
-import TransitionMain from "./transition-main"
+import CategoryMenu from "../@layout/categoryMenu"
+import TransitionMain from "../@layout/main"
 import { POST_PER_PAGE } from "../../constants/page"
 import {
   main,
@@ -15,6 +14,7 @@ import {
   profile,
 } from "./post-list-template.module.css"
 import { StaticImage } from "gatsby-plugin-image"
+import Bio from "../@layout/bio"
 
 const PostListTemplate = ({ data, location, pageContext }) => {
   const { currentPage, totalCount } = pageContext
@@ -54,26 +54,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
     <Layout location={location}>
       <div className={mainWrapper}>
         <aside className={sideMenu}>
-          <div className={profile}>
-            <header>
-              <StaticImage
-                layout="fixed"
-                formats={["auto", "webp", "avif"]}
-                placeholder="blurred"
-                src="../../../static/images/icon.png"
-                width={64}
-                height={64}
-                quality={95}
-                alt="logo"
-              />
-
-              <div>
-                <span>@suu3</span>
-                <span>Developer</span>
-              </div>
-            </header>
-            <p>프론트엔드 개발자입니다.</p>
-          </div>
+          <Bio />
           {categories && (
             <CategoryMenu
               pathname={location.pathname}

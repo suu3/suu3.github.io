@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Seo from "../components/@core/seo"
-import PostListTemplate from "../components/@layout/post-list-template"
+import Seo from "../components/@layout/seo"
+import PostListTemplate from "../components/@templates/post-list-template"
 
 const Home = ({ data, location, pageContext }) => {
   return <PostListTemplate {...{ data, location, pageContext }} />
