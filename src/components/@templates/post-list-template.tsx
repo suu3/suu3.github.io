@@ -11,9 +11,7 @@ import {
   mainWrapper,
   ol,
   sideMenu,
-  profile,
 } from "./post-list-template.module.css"
-import { StaticImage } from "gatsby-plugin-image"
 import Bio from "../@layout/bio"
 
 const PostListTemplate = ({ data, location, pageContext }) => {

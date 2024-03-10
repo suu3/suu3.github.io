@@ -1,0 +1,29 @@
+.wrapper {
+  box-shadow: 0 0 0 1px inset;
+  width: 78px;
+
+  border-radius: 99px;
+  height: 46px;
+  padding: 6px 8px;
+}
+
+.inner {
+  border-radius: 99px;
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  box-shadow: none;
+  width: 34px;
+  height: 34px;
+  border: none;
+  box-shadow: 0 0 0 1px inset;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}

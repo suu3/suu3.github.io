@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { wrapper, inner, hide, logo } from "./navigation.module.css"
 import { Link } from "gatsby"
 import { SplitText } from "../../split-text"
@@ -6,6 +6,7 @@ import clsx from "clsx"
 // import throttle from "lodash/throttle"
 import { StaticImage } from "gatsby-plugin-image"
 import { HOME_URL } from "../../../constants/links"
+import ThemeBtn from "./themeBtn"
 
 const Navigation = () => {
   const [showNavigation, setShowNavigation] = useState(true)
@@ -46,7 +47,7 @@ const Navigation = () => {
               layout="fixed"
               formats={["auto", "webp", "avif"]}
               placeholder="blurred"
-              src="../../../static/images/icon.png"
+              src="../../../../static/images/icon.png"
               width={35}
               height={35}
               quality={95}
@@ -54,6 +55,9 @@ const Navigation = () => {
             />
             <SplitText words="Suu.Blog" />
           </Link>
+        </li>
+        <li>
+          <ThemeBtn />
         </li>
       </ul>
     </nav>
