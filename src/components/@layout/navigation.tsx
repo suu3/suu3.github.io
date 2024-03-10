@@ -6,6 +6,7 @@ import clsx from "clsx"
 import { ReactComponent as Github } from "/static/images/github.svg"
 // import throttle from "lodash/throttle"
 import { StaticImage } from "gatsby-plugin-image"
+import { HOME_URL } from "../../constants/links"
 
 const Navigation = () => {
   const [showNavigation, setShowNavigation] = useState(true)
@@ -40,7 +41,7 @@ const Navigation = () => {
     <nav className={clsx(wrapper, !showNavigation && hide)}>
       <ul className={inner}>
         <li>
-          <Link to="/home/page/1">
+          <Link to={HOME_URL}>
             <StaticImage
               className={logo}
               layout="fixed"

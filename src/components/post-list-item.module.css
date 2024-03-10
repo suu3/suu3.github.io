@@ -16,7 +16,7 @@
 
     .badge {
       transition: all 0.1s ease-in-out;
-      background: #ffe7ca;
+      background: #ffddca;
     }
   }
 
@@ -26,7 +26,7 @@
     font-size: 16px;
     line-height: 12px;
 
-    background-color: #ffe7ca;
+    background-color: #ffddca;
     color: #000000;
     padding: 12px 16px;
     border-bottom: 1px solid #2a2b31;
@@ -94,7 +94,6 @@
   line-height: 14px;
 
   color: #60616a;
-  border-top: 1px solid #2a2b31;
   padding: 15px 26px;
   text-align: right;
 }

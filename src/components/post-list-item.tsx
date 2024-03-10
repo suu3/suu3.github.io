@@ -9,7 +9,6 @@ import {
   badge,
 } from "./post-list-item.module.css"
 // import Arrow from "./arrow"
-import Badge from "./badge"
 
 interface PostListItemProps {
   title: string
@@ -35,14 +34,6 @@ const PostListItem = ({
   return (
     <article className={box} itemScope itemType="http://schema.org/Article">
       {category && <header className={categoryCls}>{category}</header>}
-      {/* <div
-        className={topBar}
-        style={{
-          backgroundImage: `url(${withPrefix("/images/grid-vert-2.svg")})`,
-        }}
-      /> */}
-      {/* <Arrow direction="right" className={arrow} /> */}
-      {/* <span className={arrow}>→</span> */}
       <div className={inner}>
         {badges && <div className={badgesCls}>{badges}</div>}
         <div className={item}>

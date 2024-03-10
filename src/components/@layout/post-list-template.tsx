@@ -12,8 +12,9 @@ import {
   mainWrapper,
   ol,
   sideMenu,
-  paginationCls,
+  profile,
 } from "./post-list-template.module.css"
+import { StaticImage } from "gatsby-plugin-image"
 
 const PostListTemplate = ({ data, location, pageContext }) => {
   const { currentPage, totalCount } = pageContext
@@ -26,16 +27,6 @@ const PostListTemplate = ({ data, location, pageContext }) => {
     navigate(`${pathname}/page/${page}/`)
   }
 
-  const textItemRender = (current, type, element) => {
-    if (type === "prev") {
-      return "←"
-    }
-    if (type === "next") {
-      return "→"
-    }
-
-    return element
-  }
   const renderPosts =
     posts.length === 0 ? (
       <p>게시물이 없습니다.</p>
@@ -61,27 +52,37 @@ const PostListTemplate = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location}>
-      {categories && (
-        <CategoryMenu pathname={location.pathname} categories={categories} />
-      )}
-
       <div className={mainWrapper}>
-        {/* <aside className={sideMenu}>
-          <h3
-            style={{
-              padding: "0 8px 10px 8px",
-              margin: "var(--spacing-2)",
-            }}
-          >
-            Tags
-          </h3>
-          {tags.group.map(({ fieldValue, totalCount }) => (
-            <Badge key={fieldValue}>{`${fieldValue} (${totalCount})`}</Badge>
-          ))}
-        </aside> */}
+        <aside className={sideMenu}>
+          <div className={profile}>
+            <header>
+              <StaticImage
+                layout="fixed"
+                formats={["auto", "webp", "avif"]}
+                placeholder="blurred"
+                src="../../../static/images/icon.png"
+                width={64}
+                height={64}
+                quality={95}
+                alt="logo"
+              />
+
+              <div>
+                <span>@suu3</span>
+                <span>Developer</span>
+              </div>
+            </header>
+            <p>프론트엔드 개발자입니다.</p>
+          </div>
+          {categories && (
+            <CategoryMenu
+              pathname={location.pathname}
+              categories={categories}
+            />
+          )}
+        </aside>
         <TransitionMain className={main}>
           <h1>Latest</h1>
-          <hr />
           <ol className={ol}>{renderPosts}</ol>
           <hr />
           <Pagination
@@ -89,16 +90,6 @@ const PostListTemplate = ({ data, location, pageContext }) => {
             currentPage={currentPage}
             totalPages={Math.ceil(totalCount / POST_PER_PAGE)}
           />
-          {/* <Pagination
-            itemRender={textItemRender}
-            current={currentPage}
-            className={paginationCls}
-            onChange={handlePageChange}
-            total={totalCount}
-            pageSize={POST_PER_PAGE}
-            jumpNextIcon={"..."}
-            jumpPrevIcon={"..."}
-          /> */}
         </TransitionMain>
       </div>
     </Layout>

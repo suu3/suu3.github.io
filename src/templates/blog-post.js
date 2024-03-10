@@ -6,9 +6,12 @@ import Utterances from "../components/@core/utterances"
 // import Bio from "../components/@layout/bio"
 import Layout from "../components/@core/layout"
 import Seo from "../components/@core/seo"
-import Badge from "../components/badge"
 import TableContents from "../components/table-contents"
+import { HOME_URL } from "../constants/links"
 import {
+  wrapper,
+  left,
+  mainArticle,
   blogPost,
   blogPostNav,
   badgesCls,
@@ -16,6 +19,7 @@ import {
   leftBox,
   rightBox,
 } from "./blog-post.module.css"
+import { navigate } from "gatsby"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -32,7 +36,6 @@ const BlogPostTemplate = ({
   return (
     <Layout location={location} title={siteTitle}>
       <TransitionMain>
-        <TableContents content={post.tableOfContents} />
         <article
           className={blogPost}
           itemScope
@@ -47,38 +50,71 @@ const BlogPostTemplate = ({
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
             <p className={badgesCls}>{badges}</p>
           </header>
-          <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            itemProp="articleBody"
-          />
-          {/* <footer>
-          <Bio />
-        </footer> */}
+          <div className={wrapper}>
+            <div className={left}>
+              <TableContents content={post.tableOfContents} />
+              <button
+                onClick={() => {
+                  navigate(HOME_URL)
+                }}
+              >
+                <svg
+                  width="9"
+                  height="16"
+                  viewBox="0 0 9 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 15L0.999998 8L8 1"
+                    stroke="#2A2B31"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                홈으로 가기
+              </button>
+            </div>
+            <div className={mainArticle}>
+              <section
+                dangerouslySetInnerHTML={{ __html: post.html }}
+                itemProp="articleBody"
+              />
+              <Utterances />
+              <nav className={blogPostNav}>
+                <ul>
+                  <li>
+                    {previous && (
+                      <Link
+                        className={leftBox}
+                        to={previous.fields.slug}
+                        rel="prev"
+                      >
+                        <span>
+                          {/* <span>←</span> */}
+                          이전 글
+                        </span>
+                        <p>{previous.frontmatter.title}</p>
+                      </Link>
+                    )}
+                  </li>
+                  <li>
+                    {next && (
+                      <Link
+                        className={rightBox}
+                        to={next.fields.slug}
+                        rel="next"
+                      >
+                        <span>다음 글{/* <span>→</span> */}</span>
+                        <p>{next.frontmatter.title}</p>
+                      </Link>
+                    )}
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </article>
-        <Utterances />
-        <nav className={blogPostNav}>
-          <ul>
-            <li>
-              {previous && (
-                <Link className={leftBox} to={previous.fields.slug} rel="prev">
-                  <span>
-                    {/* <span>←</span> */}
-                    이전 글
-                  </span>
-                  <p>{previous.frontmatter.title}</p>
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link className={rightBox} to={next.fields.slug} rel="next">
-                  <span>다음 글{/* <span>→</span> */}</span>
-                  <p>{next.frontmatter.title}</p>
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
       </TransitionMain>
     </Layout>
   )
@@ -113,7 +149,7 @@ export const pageQuery = graphql`
       tableOfContents
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY.MM.DD")
         description
         category
         tag

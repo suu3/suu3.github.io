@@ -18,7 +18,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: 918px;
+  --maxWidth-wrapper: calc(288px + 912px + 24px);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -281,13 +281,9 @@ a:focus {
   /* background-color: var(--background-color); */
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-8) 0 var(--spacing-10);
+  padding: 64px 0 var(--spacing-10) 0;
 
   position: relative;
-}
-
-.global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
 }
 
 /* .global-header {
