@@ -37,7 +37,15 @@
           margin-right: 22px;
         }
       }
+      display: block;
     }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .wrapper .left {
+      display: none;
+    }
+    margin: 16px;
   }
 }
 
@@ -172,7 +180,7 @@ header small {
     text-overflow: ellipsis;
   }
 }
-.left-box {
+-box {
   /* box-shadow: -6px 6px 0px -1px var(--color-neutral-01); */
 
   &:hover {

@@ -314,6 +314,10 @@ a:focus {
   padding: 64px 0 var(--spacing-10) 0;
 
   position: relative;
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 0 var(--spacing-5) 0;
+  }
 }
 
 /* .global-header {

@@ -1,15 +1,5 @@
 .wrapper {
   margin-bottom: 44px;
-  display: none;
-  /* position: absolute;
-  height: 100%;
-  right: 0;
-  padding: 0 var(--spacing-4);
-  transform: translateX(100%); */
-
-  @media screen and (min-width: 1300px) {
-    display: block;
-  }
 }
 
 .inner {
