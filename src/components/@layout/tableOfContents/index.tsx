@@ -8,7 +8,7 @@ interface TableContentsProps {
 
 const TableContents = ({ content = "" }: TableContentsProps) => {
   let targetedIds = useMemo(() => {
-    if (!document) return
+    if (typeof window === "undefined") return
     const dummyDOM = document.createElement("html")
     dummyDOM.innerHTML = content
     const justAnchors = dummyDOM.querySelectorAll(`a`)

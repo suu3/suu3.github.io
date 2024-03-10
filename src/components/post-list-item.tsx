@@ -35,7 +35,6 @@ const PostListItem = ({
   thumbnail,
 }: PostListItemProps) => {
   const thumbnailImg = getImage(thumbnail)
-  console.log(thumbnail)
   const badges = tag?.map(item => (
     <span className={badge} key={item}>
       #{item}
