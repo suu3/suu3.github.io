@@ -22,7 +22,6 @@ const ThemeBtn = () => {
 
   useEffect(() => {
     toggleClass(theme)
-    console.log("theme", theme)
   }, [theme])
 
   const toggleClass = newTheme => {

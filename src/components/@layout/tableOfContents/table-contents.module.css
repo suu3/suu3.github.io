@@ -44,9 +44,27 @@
   margin: 0;
   padding-bottom: var(--spacing-1);
 
+  &.active,
   &:hover {
     color: var(--color-theme-01);
     font-weight: 700;
+  }
+
+  &.active {
+    animation-name: pulse;
+    animation-timing-function: var(--transition-timing-function);
+    animation-duration: var(--transition-duration);
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
   }
 }
 
