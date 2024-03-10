@@ -19,7 +19,7 @@ const TableContents = ({ content = "" }: TableContentsProps) => {
     })
 
     return anchorList
-  }, [document])
+  }, [])
 
   const activeHash = useActiveHash(targetedIds)
 
