@@ -9,12 +9,13 @@
 
   h1 {
     margin: 0;
-    padding: 16px;
+    padding: 20px 24px;
     font-family: MONOSPACE;
     font-size: 32px;
     line-height: 32px;
     font-weight: 700;
-    border: 1px solid #2a2b31;
+    color: var(--color-bg-surface-02);
+    border: 1px solid var(--color-bg-surface-02);
     border-radius: 10px;
   }
 }

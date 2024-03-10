@@ -1,6 +1,6 @@
 .profile {
   border-radius: 10px;
-  border: 1px solid #2a2b31;
+  border: 1px solid var(--color-bg-surface-02);
   overflow: hidden;
 
   header {
@@ -8,13 +8,13 @@
     display: flex;
     align-items: center;
     column-gap: 16px;
-    background: #f3efec;
+    background: var(--color-theme-04);
 
-    border-bottom: 1px solid #2a2b31;
+    border-bottom: 1px solid var(--color-bg-surface-02);
 
     img {
       border-radius: 50%;
-      border: 1px solid #2a2b31;
+      border: 1px solid var(--color-bg-surface-02);
     }
 
     > div {
@@ -24,13 +24,13 @@
       font-family: MONOSPACE;
 
       > span:first-child {
-        color: #2a2b31;
+        color: var(--color-bg-surface-02);
         font-size: 16px;
         font-weight: 700;
         line-height: 16px;
       }
       > span:last-child {
-        color: #fc8755;
+        color: var(--color-theme-02);
         font-size: 14px;
         font-weight: 700;
         line-height: 14px;
@@ -41,7 +41,7 @@
   p {
     padding: 16px 24px;
     margin: 0;
-    color: #9597a1;
+    color: var(--color-neutral-02);
     font-size: 14px;
     font-weight: 400;
     line-height: 20.3px;

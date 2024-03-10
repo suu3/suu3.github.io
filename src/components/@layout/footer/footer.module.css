@@ -1,5 +1,6 @@
 .wrapper {
-  border-top: 1px solid #2a2b31;
+  color: var(--color-neutral-01);
+  border-top: 1px solid var(--color-bg-surface-02);
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,6 @@
   }
 
   a {
-    color: #2a2b31;
     text-decoration: underline;
   }
 }

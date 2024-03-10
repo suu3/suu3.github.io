@@ -2,7 +2,6 @@ import React from "react"
 import {
   item,
   box,
-  categoryCls,
   descriptionCls,
   badgesCls,
   inner,
@@ -33,7 +32,7 @@ const PostListItem = ({
 
   return (
     <article className={box} itemScope itemType="http://schema.org/Article">
-      {category && <header className={categoryCls}>{category}</header>}
+      {category && <header>{category}</header>}
       <div className={inner}>
         {badges && <div className={badgesCls}>{badges}</div>}
         <div className={item}>

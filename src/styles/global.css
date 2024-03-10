@@ -62,17 +62,18 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #ff5e5b;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #4a4e69;
 
   /* custom variables */
   --fixed-z-index: 100;
-  --background-color: #ffffff;
   --navigation-height: 60px;
+  --transition-duration: 0.1s;
+  --transition-timing-function: linear;
+}
+
+body * {
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function);
 }
 
 body.light {
@@ -81,10 +82,13 @@ body.light {
   --color-theme-03: #ffddca;
   --color-theme-04: #f3efec;
   --color-bg-surface: #2a2b31;
+  --color-bg-surface-02: #2a2b31;
   --color-neutral-01: #60616a;
   --color-neutral-02: #9597a1;
   --color-neutral-03: #ebebeb;
   --color-neutral-04: #fbfbfb;
+
+  --color-background: #ffffff;
 }
 
 body.dark {
@@ -93,10 +97,13 @@ body.dark {
   --color-theme-03: #c29f94;
   --color-theme-04: #3d3937;
   --color-bg-surface: #2a2b31;
+  --color-bg-surface-02: #ffffff;
   --color-neutral-01: #ebdfd9;
   --color-neutral-02: #948884;
   --color-neutral-03: #ebebeb;
   --color-neutral-04: #fbfbfb;
+
+  --color-background: #2a2b31;
 }
 /* HTML elements */
 
@@ -109,14 +116,14 @@ body.dark {
 *::-webkit-scrollbar {
   width: 0.3rem;
   height: 0.3rem;
-  background-color: var(--background-color);
+  background-color: var(--color-background);
 }
 *::-webkit-scrollbar-thumb {
-  background-color: var(--color-accent);
+  background-color: var(--color-neutral-01);
   border-radius: 0.5rem;
 }
 *::-webkit-scrollbar-track {
-  background-color: var(--background-color);
+  background-color: var(--color-background);
 }
 
 html {
@@ -130,8 +137,8 @@ html {
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
-  color: var(--color-text);
-  background-color: var(--background-color);
+  color: var(--color-bg-surface-02);
+  background-color: var(--color-background);
 
   /*grid
   background: url("/images/grid-vert.svg") repeat;
@@ -147,7 +154,7 @@ footer {
 }
 
 hr {
-  background: var(--color-accent);
+  background: var(--color-neutral-01);
   height: 1px;
   border: 0;
 }
@@ -179,7 +186,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  color: var(--color-bg-surface-02);
 }
 
 h2 {
@@ -256,11 +263,11 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-light);
+  color: var(--color-bg-surface-02);
   margin-left: calc(1 * var(--spacing-3));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-accent);
+  border-left: var(--spacing-1) solid var(--color-neutral-01);
   font-size: var(--fontSize-2);
   font-style: italic;
   margin-bottom: var(--spacing-8);
@@ -283,13 +290,13 @@ table {
 }
 
 table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-neutral-01);
 }
 
 /* Link */
 
 a {
-  color: var(--color-accent);
+  color: var(--color-neutral-01);
 }
 
 a,
@@ -301,7 +308,7 @@ a:focus {
 /* Custom classes */
 
 .global-wrapper {
-  /* background-color: var(--background-color); */
+  /* background-color: var(--color-background); */
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: 64px 0 var(--spacing-10) 0;
@@ -345,7 +352,7 @@ a:focus {
 /* TO DO: pagination 나중에 모듈 적용 가능하게 교체*/
 .rc-pagination-item.rc-pagination-item-active {
   > a {
-    color: var(--color-accent);
+    color: var(--color-neutral-01);
   }
 }
 .rc-pagination-item,
@@ -362,6 +369,6 @@ a:focus {
   font-size: var(--fontSize-2);
 
   > a {
-    color: var(--color-text);
+    color: var(--color-bg-surface-02);
   }
 }

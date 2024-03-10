@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { ReactComponent as LeftArrow } from "/static/images/left-arrow.svg"
 
 import TransitionMain from "../components/@layout/main"
 import Utterances from "../components/@layout/utterances"
@@ -58,20 +59,7 @@ const BlogPostTemplate = ({
                   navigate(HOME_URL)
                 }}
               >
-                <svg
-                  width="9"
-                  height="16"
-                  viewBox="0 0 9 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 15L0.999998 8L8 1"
-                    stroke="#2A2B31"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <LeftArrow />
                 홈으로 가기
               </button>
             </div>

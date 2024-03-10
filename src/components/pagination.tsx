@@ -1,6 +1,8 @@
 import React from "react"
 import clsx from "clsx"
 import * as styles from "./pagination.module.css"
+import { ReactComponent as LeftArrow } from "/static/images/left-arrow.svg"
+import { ReactComponent as RightArrow } from "/static/images/right-arrow.svg"
 
 type PaginationProps = {
   pagesToShow?: number
@@ -94,27 +96,7 @@ const Pagination = ({
           [styles["disabled"]]: isFirstPage,
         })}
       >
-        <svg
-          width="9"
-          height="16"
-          viewBox="0 0 9 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 15L0.999998 8L8 1"
-            stroke="#2A2B31"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-        {/* <Image
-          src={prevArrow}
-          width={24}
-          height={24}
-          alt="Prev Button"
-          
-        /> */}
+        <LeftArrow />
       </button>
       <ol className={styles["pages"]}>{renderPages}</ol>
       <button
@@ -123,27 +105,7 @@ const Pagination = ({
         })}
         onClick={handleNextPage}
       >
-        <svg
-          width="9"
-          height="16"
-          viewBox="0 0 9 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 1L8 8L0.999999 15"
-            stroke="#2A2B31"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-        {/* <Image
-          src={nextArrow}
-          width={24}
-          height={24}
-          alt="Next Button"
-          onClick={handleNextPage}
-        /> */}
+        <RightArrow />
       </button>
     </div>
   )

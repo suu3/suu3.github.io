@@ -1,7 +1,7 @@
 .wrapper {
   display: inline-block;
   overflow: hidden;
-  color: #000000;
+  color: var(--color-bg-surface-02);
 
   font-family: ibm-plex-mono;
   font-weight: 700;

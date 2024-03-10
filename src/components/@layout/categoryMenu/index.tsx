@@ -29,7 +29,7 @@ const CategoryMenu = ({ categories = {}, pathname = "" }) => {
           >
             <path
               d="M3 13L10 6L17 13"
-              stroke="#2A2B31"
+              stroke="var(--color-bg-surface)"
               stroke-linecap="round"
               stroke-linejoin="round"
             />

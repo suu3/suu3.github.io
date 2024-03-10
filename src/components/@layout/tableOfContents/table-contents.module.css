@@ -15,7 +15,6 @@
 .inner {
   /* position: fixed; */
   position: sticky;
-  /* background: #ffc700; */
   min-width: 288px;
   max-height: calc(100vh - 200px);
   overflow: auto;
@@ -25,21 +24,21 @@
 
   list-style: none;
 
-  /* box-shadow: 6px 6px 0px -1px var(--color-accent); */
-  /* border: 2px solid var(--color-text); */
+  /* box-shadow: 6px 6px 0px -1px var(--color-neutral-01); */
+  /* border: 2px solid var(--color-bg-surface-02); */
 
   > div {
     font-weight: 700;
     padding: var(--spacing-6);
   }
 
-  background-color: #f3f0ec;
-  border: 1px solid #2a2b31;
+  background-color: var(--color-theme-04);
+  border: 1px solid var(--color-bg-surface-02);
   border-radius: 10px;
 }
 
 .inner a {
-  color: #60616a;
+  color: var(--color-neutral-01);
   font-size: var(--fontSize-0);
 
   position: relative;
@@ -50,7 +49,8 @@
   padding-bottom: var(--spacing-1);
 
   &:hover {
-    color: #ff740f;
+    color: var(--color-theme-01);
+    font-weight: 700;
   }
 }
 
@@ -74,31 +74,10 @@
     margin-left: 0;
   }
 }
-/*animation*/
-/* 
-.inner a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.125rem;
-  background-color: var(--color-accent);
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-
-  opacity: 1;
-  transform: translate3d(calc(-100% - 1px), 0, 0);
-} */
-
-/* .inner a:hover::after,
-.inner a:focus::after {
-  transform: translate3d(0, 0, 0);
-} */
-
 .header {
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-bg-surface-02);
   padding: 16px 24px;
+  color: var(--color-bg-surface-02);
 
   font-family: MONOSPACE;
   font-size: 16px;

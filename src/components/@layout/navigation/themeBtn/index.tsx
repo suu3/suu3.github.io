@@ -54,10 +54,10 @@ const ThemeBtn = () => {
       onClick={toggleTheme}
       className={wrapper}
       animate={theme === "light" ? "light" : "dark"}
-      initial={{ backgroundColor: "#ffffff", color: "#2a2b31" }}
+      initial={{ backgroundColor: "#ffffff", color: "var(--color-bg-surface)" }}
       variants={{
-        light: { backgroundColor: "#ffffff", color: "#2a2b31" },
-        dark: { backgroundColor: "#2A2B31", color: "#ffffff" },
+        light: { backgroundColor: "#ffffff", color: "var(--color-bg-surface)" },
+        dark: { backgroundColor: "var(--color-bg-surface)", color: "#ffffff" },
       }}
     >
       <motion.div
@@ -75,9 +75,17 @@ const ThemeBtn = () => {
           className={btn}
           whileTap={{ rotate: 360 }}
           animate={theme === "light" ? "light" : "dark"}
-          initial={{ x: 0, backgroundColor: "#ff740f", color: "#2a2b31" }}
+          initial={{
+            x: 0,
+            backgroundColor: "#ff740f",
+            color: "var(--color-bg-surface)",
+          }}
           variants={{
-            light: { x: 0, backgroundColor: "#ff740f", color: "#2a2b31" },
+            light: {
+              x: 0,
+              backgroundColor: "#ff740f",
+              color: "var(--color-bg-surface)",
+            },
             dark: { x: 30, backgroundColor: "#FF8B66", color: "#ffffff" },
           }}
         >

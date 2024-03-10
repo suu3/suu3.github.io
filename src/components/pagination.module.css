@@ -9,8 +9,9 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid #2a2b31;
-  color: #000000;
+  background-color: var(--color-theme-04);
+  border: 1px solid var(--color-bg-surface-02);
+  color: var(--color-bg-surface-02);
 
   font-family: IBM Plex Mono;
   font-size: 14px;
@@ -27,8 +28,13 @@
   }
 
   &.disabled {
+    background-color: var(--color-neutral-03);
+    border: 1px solid var(--color-neutral-02);
+    path {
+      stroke: var(--color-neutral-02);
+    }
+
     pointer-events: none;
-    opacity: 0.5;
   }
 }
 
@@ -45,22 +51,21 @@
   border-radius: 10px;
   width: 40px;
   height: 40px;
-  border: 1px solid #2a2b31;
-  color: #000000;
+  border: 1px solid var(--color-bg-surface-02);
+  color: var(--color-bg-surface-02);
 
   font-family: IBM Plex Mono;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 14;
+  line-height: 14px;
 
   cursor: pointer;
 
   &.active {
-    background-color: #ff740f;
+    background-color: var(--color-theme-01);
   }
 
   &.ellipsis {
     cursor: default;
-    color: $ellipsis--color;
   }
 }
