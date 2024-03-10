@@ -162,6 +162,8 @@ exports.createSchemaCustomization = ({ actions }) => {
   // Also explicitly define the Markdown frontmatter
   // This way the "MarkdownRemark" queries will return `null` even when no
   // blog posts are stored inside "content/blog" instead of returning an error
+
+  //@link https://github.com/gatsbyjs/gatsby/issues/4123
   createTypes(`
     type SiteSiteMetadata {
       author: Author
@@ -188,7 +190,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       date: Date @dateformat
       tag: [String]
-      thumbnail: File
+      thumbnail: File @fileByRelativePath 
     }
 
     type Fields {
