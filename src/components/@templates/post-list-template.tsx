@@ -41,6 +41,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
                 category={post.frontmatter?.category}
                 tag={post.frontmatter.tag}
                 description={post.frontmatter.description || post.excerpt}
+                thumbnail={post.frontmatter?.thumbnail}
               />
             </Link>
           </li>

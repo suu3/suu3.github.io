@@ -4,6 +4,7 @@ date: "2022-06-05"
 description: "React Hook Form을 사용해보았다"
 tag: ["react", "react-hook-form"]
 category: React
+thumbnail: ./1.png
 ---
 
 ![Untitled](./1.png)

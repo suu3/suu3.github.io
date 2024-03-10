@@ -4,6 +4,7 @@ date: "2022-01-21"
 description: "django에서 google social login 구현하는 방법에 대해 알아본다."
 tag: ["project", "django"]
 category: "Django"
+thumbnail: ./1.png
 ---
 
 1. allauth를 사용하는 방법과

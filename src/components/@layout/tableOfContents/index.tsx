@@ -8,7 +8,8 @@ interface TableContentsProps {
 
 const TableContents = ({ content = "" }: TableContentsProps) => {
   let targetedIds = useMemo(() => {
-    var dummyDOM = document.createElement("html")
+    if (!document) return
+    const dummyDOM = document.createElement("html")
     dummyDOM.innerHTML = content
     const justAnchors = dummyDOM.querySelectorAll(`a`)
 
@@ -18,7 +19,7 @@ const TableContents = ({ content = "" }: TableContentsProps) => {
     })
 
     return anchorList
-  }, [])
+  }, [document])
 
   const activeHash = useActiveHash(targetedIds)
 

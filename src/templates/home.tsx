@@ -54,6 +54,15 @@ export const pageQuery = graphql`
           description
           category
           tag
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(
+                width: 256
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
         }
       }
     }

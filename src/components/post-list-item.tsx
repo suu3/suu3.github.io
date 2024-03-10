@@ -1,12 +1,20 @@
 import React from "react"
 import {
   item,
+  thumbnailCls,
   box,
+  img,
   descriptionCls,
   badgesCls,
   inner,
   badge,
 } from "./post-list-item.module.css"
+import {
+  GatsbyImage,
+  IGatsbyImageData,
+  StaticImage,
+  getImage,
+} from "gatsby-plugin-image"
 // import Arrow from "./arrow"
 
 interface PostListItemProps {
@@ -15,6 +23,7 @@ interface PostListItemProps {
   description: string | TrustedHTML
   tag: string[]
   category?: string
+  thumbnail?: IGatsbyImageData
 }
 
 const PostListItem = ({
@@ -23,7 +32,10 @@ const PostListItem = ({
   description,
   category,
   tag = [],
+  thumbnail,
 }: PostListItemProps) => {
+  const thumbnailImg = getImage(thumbnail)
+  console.log(thumbnailImg)
   const badges = tag?.map(item => (
     <span className={badge} key={item}>
       #{item}
@@ -34,6 +46,23 @@ const PostListItem = ({
     <article className={box} itemScope itemType="http://schema.org/Article">
       {category && <header>{category}</header>}
       <div className={inner}>
+        <div className={thumbnailCls}>
+          <span>{category}</span>
+          {thumbnailImg ? (
+            <GatsbyImage className={img} image={thumbnailImg} alt="" />
+          ) : (
+            <StaticImage
+              className={img}
+              formats={["auto", "webp", "avif"]}
+              placeholder="blurred"
+              src="../../static/images/dummy.jpg"
+              width={256}
+              height={157}
+              quality={95}
+              alt=""
+            />
+          )}
+        </div>
         {badges && <div className={badgesCls}>{badges}</div>}
         <div className={item}>
           <h2>
