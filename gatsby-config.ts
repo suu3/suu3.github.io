@@ -2,6 +2,7 @@
  * Configure your Gatsby site with this file.
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+ * https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/
  */
 
 /**
@@ -16,7 +17,7 @@ module.exports = {
       summary: `Suu.Blog`,
     },
     description: `@suu3의 기술 블로그`,
-    siteUrl: `https://suu3.github.io/home/page/1`,
+    siteUrl: `https://suu3.github.io/home/1`,
     // social: {
     //   twitter: `kylemathews`,
     // },
@@ -116,7 +117,7 @@ module.exports = {
       options: {
         name: `Suu3 Blog`,
         short_name: `Suu3 Blog`,
-        start_url: `/home/page/1`,
+        start_url: `/home/1`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/

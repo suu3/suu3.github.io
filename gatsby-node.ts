@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
-import { POST_PER_PAGE } from "./src/constants/page"
+import { POST_PER_PAGE } from "./src/constants"
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
@@ -61,7 +61,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const numPages = Math.ceil(categoryPosts.length / postsPerPage)
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
-        path: `/${category}/page/${i + 1}/`,
+        path: `/${category}/${i + 1}/`,
         component: path.resolve(`./src/templates/category-posts.js`), // Just like `createPage()`\
         context: {
           limit: postsPerPage,
@@ -79,7 +79,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: `/home/page/${i + 1}/`,
+      path: `/home/${i + 1}/`,
       component: path.resolve(`./src/templates/home.tsx`), // Just like `createPage()`\
       context: {
         limit: postsPerPage,
@@ -113,21 +113,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   createRedirect({
     fromPath: `/`,
-    toPath: `/home/page/1`,
+    toPath: `/home/1`,
     redirectInBrowser: true,
     isPermanent: true,
   })
 
   createRedirect({
     fromPath: `/home/`,
-    toPath: `/home/page/1`,
+    toPath: `/home/1`,
     redirectInBrowser: true,
     isPermanent: true,
   })
 
   createRedirect({
-    fromPath: `/home/page/`,
-    toPath: `/home/page/1`,
+    fromPath: `/home/`,
+    toPath: `/home/1`,
     redirectInBrowser: true,
     isPermanent: true,
   })

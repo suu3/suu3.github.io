@@ -53,7 +53,7 @@
     "url": "git+https://github.com/suu3/blog.git"
   },
   "scripts": {
-    "deploy": "gatsby clean && gatsby build  && gh-pages -d public -b deploy",
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b deploy",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",

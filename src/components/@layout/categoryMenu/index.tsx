@@ -4,7 +4,7 @@ import { wrapper, header, active, inactive } from "./category-menu.module.css"
 import { HOME_URL } from "../../../constants/links"
 
 const CategoryMenu = ({ categories = {}, pathname = "" }) => {
-  const [clicked, setClicked] = useState(decodeURI(pathname).split("/page/")[0])
+  const [clicked, setClicked] = useState(decodeURI(pathname).split("/")[0])
   const { totalCount, group } = categories
 
   const listClassName = (category: string) =>
@@ -42,7 +42,7 @@ const CategoryMenu = ({ categories = {}, pathname = "" }) => {
         {group.map(({ fieldValue, totalCount }: string) => (
           <Link
             key={fieldValue}
-            to={`/${fieldValue}/page/1`}
+            to={`/${fieldValue}/1`}
             onClick={() => handleClickMenu(`/${fieldValue}`)}
           >
             <li className={listClassName(`/${fieldValue}`)}>
