@@ -143,6 +143,20 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KZHNKFDT",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-3886701004172830`,
+      },
+    },
   ],
   // trailingSlash: `never`, // url 뒤 행 슬래쉬 trailing slash
 }
