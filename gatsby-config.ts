@@ -18,6 +18,7 @@ module.exports = {
     },
     description: `@suu3의 기술 블로그`,
     siteUrl: `https://suu3.github.io/home/1`,
+    favicon: "/favicon.ico",
     // social: {
     //   twitter: `kylemathews`,
     // },
