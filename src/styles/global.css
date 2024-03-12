@@ -316,7 +316,7 @@ a:focus {
   position: relative;
 
   @media screen and (max-width: 1300px) {
-    padding: 0 0 var(--spacing-5) 0;
+    padding: 10px 0 var(--spacing-5) 0;
   }
 }
 
