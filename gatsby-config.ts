@@ -114,7 +114,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-manifest`, //https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
       options: {
         name: `Suu3 Blog`,
         short_name: `Suu3 Blog`,
@@ -124,7 +124,39 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#ff6737`,
         display: `minimal-ui`,
-        icon: `src/static/images/icon.png`, // This path is relative to the root of the site.
+        icon: `static/images/icon.png`, // This path is relative to the root of the site.
+        icons: [
+          {
+            src: `static/favicons/favicon-48x48.png`,
+            sizes: `48x48`,
+            type: `image/png`,
+          },
+          {
+            src: `static/favicons/favicon-72x72.png`,
+            sizes: `72x72`,
+            type: `image/png`,
+          },
+          {
+            src: `static/favicons/favicon-96x96.png`,
+            sizes: `96x96`,
+            type: `image/png`,
+          },
+          {
+            src: `static/favicons/favicon-144x144.png`,
+            sizes: `144x144`,
+            type: `image/png`,
+          },
+          {
+            src: `static/favicons/favicon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `static/favicons/favicon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     {
