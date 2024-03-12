@@ -111,24 +111,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   }
 
-  createRedirect({
-    fromPath: `/`,
-    toPath: `/home/1`,
-    redirectInBrowser: true,
-    isPermanent: true,
-  })
+  // createRedirect({
+  //   fromPath: `/`,
+  //   toPath: `/home/1`,
+  //   redirectInBrowser: true,
+  //   isPermanent: true,
+  // })
 
   createRedirect({
     fromPath: `/home/`,
     toPath: `/home/1`,
-    redirectInBrowser: true,
-    isPermanent: true,
-  })
-
-  createRedirect({
-    fromPath: `/home/`,
-    toPath: `/home/1`,
-    redirectInBrowser: true,
+    // redirectInBrowser: true,
     isPermanent: true,
   })
 }
