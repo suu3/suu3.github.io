@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
 
-import { POST_PER_PAGE } from "./src/constants"
+import { POST_PER_PAGE } from "./src/constants/page"
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
