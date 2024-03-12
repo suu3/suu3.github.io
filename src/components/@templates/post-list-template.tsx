@@ -13,6 +13,7 @@ import {
   sideMenu,
 } from "./post-list-template.module.css"
 import Bio from "../@layout/bio"
+import { getCategoryPaths } from "../../libs/paths"
 
 const PostListTemplate = ({ data, location, pageContext }) => {
   const { currentPage, totalCount } = pageContext
@@ -20,7 +21,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.nodes
   const tags = data.allTagsInfo
 
-  const pathname = location.pathname.split("/")[0] //.replace("/blog", "")
+  const pathname = getCategoryPaths(location.pathname)
   const handlePageChange = (page: number) => {
     navigate(`${pathname}/${page}/`)
   }

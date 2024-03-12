@@ -2,9 +2,10 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import { wrapper, header, active, inactive } from "./category-menu.module.css"
 import { HOME_URL } from "../../../constants/links"
+import { getCategoryPaths } from "../../../libs/paths"
 
 const CategoryMenu = ({ categories = {}, pathname = "" }) => {
-  const [clicked, setClicked] = useState(decodeURI(pathname).split("/")[0])
+  const [clicked, setClicked] = useState(getCategoryPaths(pathname))
   const { totalCount, group } = categories
 
   const listClassName = (category: string) =>
