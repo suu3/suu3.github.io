@@ -8,7 +8,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/blog",
+  // pathPrefix: "/blog",
   siteMetadata: {
     title: `Suu.Blog`,
     author: {
@@ -16,7 +16,7 @@ module.exports = {
       summary: `Suu.Blog`,
     },
     description: `@suu3의 기술 블로그`,
-    siteUrl: `https://suu3.github.io/blog/home/page/1`,
+    siteUrl: `https://suu3.github.io/home/page/1`,
     // social: {
     //   twitter: `kylemathews`,
     // },
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/content`,
         name: `blog`,
       },
     },

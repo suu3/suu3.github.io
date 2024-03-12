@@ -43,7 +43,7 @@
     "gh-pages": "^5.0.0",
     "prettier": "^2.8.8"
   },
-  "homepage": "https://suu3.github.io/blog/",
+  "homepage": "https://suu3.github.io/",
   "keywords": [
     "gatsby"
   ],
@@ -53,8 +53,8 @@
     "url": "git+https://github.com/suu3/blog.git"
   },
   "scripts": {
-    "deploy": "gatsby clean && gatsby build --prefix-paths  && gh-pages -d public -b deploy",
-    "build": "gatsby build --prefix-paths",
+    "deploy": "gatsby clean && gatsby build  && gh-pages -d public -b deploy",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",

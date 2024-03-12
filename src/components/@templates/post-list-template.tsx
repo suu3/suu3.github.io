@@ -20,7 +20,7 @@ const PostListTemplate = ({ data, location, pageContext }) => {
   const posts = data.allMarkdownRemark.nodes
   const tags = data.allTagsInfo
 
-  const pathname = location.pathname.split("/page/")[0].replace("/blog", "")
+  const pathname = location.pathname.split("/page/")[0] //.replace("/blog", "")
   const handlePageChange = (page: number) => {
     navigate(`${pathname}/page/${page}/`)
   }

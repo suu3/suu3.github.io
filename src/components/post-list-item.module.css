@@ -1,7 +1,6 @@
 .box {
   position: relative;
   height: 407px;
-  /* background: var(--background-color); */
   overflow: hidden;
 
   display: flex;
