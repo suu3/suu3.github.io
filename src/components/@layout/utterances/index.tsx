@@ -2,11 +2,7 @@ import React, { createRef, useLayoutEffect } from "react"
 
 const src = "https://utteranc.es/client.js"
 
-export interface IUtterancesProps {
-  repo: string
-}
-
-const Utterances: React.FC<IUtterancesProps> = React.memo(({ repo }) => {
+const Utterances = React.memo(() => {
   const containerRef = createRef<HTMLDivElement>()
 
   useLayoutEffect(() => {
@@ -26,8 +22,8 @@ const Utterances: React.FC<IUtterancesProps> = React.memo(({ repo }) => {
       utterances.setAttribute(key, value)
     })
 
-    containerRef.current.appendChild(utterances)
-  }, [repo])
+    if (containerRef.current) containerRef.current.appendChild(utterances)
+  }, [])
 
   return <div ref={containerRef} />
 })
