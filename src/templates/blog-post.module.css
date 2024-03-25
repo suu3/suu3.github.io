@@ -51,6 +51,17 @@
 
 .main-article {
   > section {
+    h2 {
+      border: 1px solid var(--color-neutral-01);
+      background: var(--color-theme-04);
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: var(--color-theme-02);
+    }
+
     display: table;
     table-layout: fixed;
     width: 100%;
