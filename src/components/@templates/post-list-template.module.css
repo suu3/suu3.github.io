@@ -34,7 +34,7 @@
   margin-top: 32px;
   margin-bottom: 122px;
 
-  @media (max-width: 60rem) {
+  @media (max-width: 1300px) {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -48,7 +48,7 @@
   max-width: 288px;
 
   /* Media queries */
-  @media (max-width: 60rem) {
+  @media (max-width: 1300px) {
     display: none;
   }
 }

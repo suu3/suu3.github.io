@@ -1,9 +1,9 @@
 @import url("https://use.typekit.net/njr2div.css");
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
     format("woff");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -76,7 +76,7 @@
   --transition-timing-function: linear;
 }
 
-body * {
+body {
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
       var(--transition-timing-function);
@@ -320,15 +320,11 @@ a:focus {
 
 .global-wrapper {
   /* background-color: var(--color-background); */
-  margin: var(--spacing-0) auto;
+  margin: auto;
   max-width: var(--maxWidth-wrapper);
   padding: 64px 0 var(--spacing-10) 0;
 
   position: relative;
-
-  @media screen and (max-width: 1300px) {
-    padding: 10px 0 var(--spacing-5) 0;
-  }
 }
 
 /* .global-header {
@@ -347,13 +343,17 @@ a:focus {
 }
 
 /* Media queries */
-@media (max-width: 60rem) {
+@media screen and (max-width: 1300px) {
   .global-wrapper {
-    padding: 0 var(--spacing-3);
+    padding: 0;
+
+    main {
+      padding: var(--spacing-3);
+    }
   }
 }
 
-@media (max-width: 42rem) {
+@media screen and (max-width: 42rem) {
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     margin-left: var(--spacing-0);

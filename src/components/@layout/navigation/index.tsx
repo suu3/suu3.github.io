@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { memo, useState } from "react"
 import { wrapper, inner, hide, logo } from "./navigation.module.css"
 import { Link } from "gatsby"
 import { SplitText } from "../../split-text"
@@ -64,4 +64,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default memo(Navigation)
