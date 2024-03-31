@@ -6,7 +6,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #c5c8c6;
+  color: var(--code-color);
   font-family: "FiraCode-Medium", monospace, Consolas, "Courier New", Courier;
   font-size: 14px;
   direction: ltr;
@@ -36,7 +36,8 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #1d1f21;
+  background: var(--code-background);
+  border: 1px solid var(--color-bg-surface-02);
 }
 
 /* Inline code */
@@ -49,11 +50,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #7c7c7c;
+  color: var(--code-dtype);
 }
 
 .token.punctuation {
-  color: #c5c8c6;
+  color: var(--code-punctuation);
 }
 
 .namespace {
@@ -63,26 +64,26 @@ pre[class*="language-"] {
 .token.property,
 .token.keyword,
 .token.tag {
-  color: #96cbfe;
+  color: var(--code-tag);
 }
 
 .token.class-name {
-  color: #ffffb6;
+  color: var(--code-class-name);
   text-decoration: underline;
 }
 
 .token.boolean,
 .token.constant {
-  color: #99cc99;
+  color: var(--code-constant);
 }
 
 .token.symbol,
 .token.deleted {
-  color: #f92672;
+  color: var(--code-deleted);
 }
 
 .token.number {
-  color: #ff73fd;
+  color: var(--code-number);
 }
 
 .token.selector,
@@ -91,46 +92,46 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #a8ff60;
+  color: var(--code-inserted);
 }
 
 .token.variable {
-  color: #c6c5fe;
+  color: var(--code-variable);
 }
 
 .token.operator {
-  color: #ededed;
+  color: var(--code-operator);
 }
 
 .token.entity {
-  color: #ffffb6;
+  color: var(--code-class-name);
   cursor: help;
 }
 
 .token.url {
-  color: #96cbfe;
+  color: var(--code-tag);
 }
 
 .language-css .token.string,
 .style .token.string {
-  color: #87c38a;
+  color: var(--code-string);
 }
 
 .token.atrule,
 .token.attr-value {
-  color: #f9ee98;
+  color: var(--code-class-name);
 }
 
 .token.function {
-  color: #dad085;
+  color: var(--code-function);
 }
 
 .token.regex {
-  color: #e9c062;
+  color: var(--code-regex);
 }
 
 .token.important {
-  color: #fd971f;
+  color: var(--code-important);
 }
 
 .token.important,
