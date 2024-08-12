@@ -1,4 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[@suu3의 기술 블로그]]></description><link>https://suu3.github.io/home/1</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 05 Apr 2024 04:22:31 GMT</lastBuildDate><item><title><![CDATA[Next.js 프로젝트에서 서버사이드 처리하기 (리디렉션, 데이터 프리페칭)]]></title><description><![CDATA[React.js 프로젝트를 Next.js 프로젝트로 마이그레이션 할 일이 있었고,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[@suu3의 기술 블로그]]></description><link>https://suu3.github.io/home/1</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Aug 2024 23:14:12 GMT</lastBuildDate><item><title><![CDATA[“[2024-08-10]2년_연속_다녀온_인프콘_2024_후기”]]></title><description><![CDATA[인프콘 202…]]></description><link>https://suu3.github.io/home/1/컨퍼런스/[2024-08-10]2년_연속_다녀온_인프콘_2024_후기/[2024-08-10]2년_연속_다녀온_인프콘_2024_후기/</link><guid isPermaLink="false">https://suu3.github.io/home/1/컨퍼런스/[2024-08-10]2년_연속_다녀온_인프콘_2024_후기/[2024-08-10]2년_연속_다녀온_인프콘_2024_후기/</guid><pubDate>Sat, 10 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;인프콘-2024&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%B8%ED%94%84%EC%BD%98-2024&quot; aria-label=&quot;인프콘 2024 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;인프콘 2024&lt;/h2&gt;
+&lt;p&gt;이맘 때 쯤이면 개발자 톡방이 컨퍼런스 티켓팅으로 술렁이는 것 같다. 인프콘은 컨퍼런스 중에서도 제일 인기많은 행사다. 내용이 다양해서 개발자가 아닌 사람들에게도 인기가 많다. 인기가 많아서 선결제 후 추첨 떨어지면 환불해주는 식으로 티켓을 판매한다.&lt;/p&gt;
+&lt;p&gt;내 주위에선 11명 정도가 신청했는데 그중 3명 정도 당첨된 것 같다. 그리고 그 중 한 명이 나다. 😆✌️ (작년에도 당첨됐었는데 이대로 내년에도 붙여주세요…!!)&lt;/p&gt;
+&lt;p&gt;작년 인프콘은 나에게 정말 큰 영향을 주었었다. 컨퍼런스 끝나고 연사님과 커피챗을 하기도 했고 세션에서 들었던 내용을 공부해보는 넥스트 액션으로 이어지기도 했다.&lt;/p&gt;
+&lt;p&gt;이번에도 같은 인사이트를 받을 수 있을까 기대를 안고 갔다. (모두의 부러움을 한 몸에 받으며…)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/88086c681ea60df193f9771ddc5c3677/12609/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMCBP/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABajcLCeaUMaO1AP8A/8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAESEiEDEy/9oACAEBAAEFAtHPXAAgxLWOAxYspu4PROiZT//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEP/aAAgBAwEBPwHQv//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/ASH/xAAeEAABAwQDAAAAAAAAAAAAAAAAASExAhAREiJhgf/aAAgBAQAGPwLi1XY83dyDaiTCpZUPRMn/xAAdEAEAAwACAwEAAAAAAAAAAAABABEhMUFRYXHR/9oACAEBAAE/IXYvRBar8oaS/T1zcPNUNLh5x8lSrXNdyxUndMGWs7iLV3M39M//2gAMAwEAAgADAAAAEJzrPf/EABcRAQEBAQAAAAAAAAAAAAAAAAEAESH/2gAIAQMBAT8QBLY00kzt/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQARITH/2gAIAQIBAT8QbICbPvL/xAAfEAEBAAIBBAMAAAAAAAAAAAABEQAhQTFRYXGBofD/2gAIAQEAAT8QU8Y7QvjHFMM2aYYN+plMGuJBv1gLfUeH7tiTuOiQwl0JWkHOI6gUFLOHK4Cgx9YYwnQRLvFiI2+N6wnQAl+XP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;사람이 정말 많다!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/88086c681ea60df193f9771ddc5c3677/828fb/1.jpg&quot;
+        srcset=&quot;/static/88086c681ea60df193f9771ddc5c3677/ff44c/1.jpg 158w,
+/static/88086c681ea60df193f9771ddc5c3677/a6688/1.jpg 315w,
+/static/88086c681ea60df193f9771ddc5c3677/828fb/1.jpg 630w,
+/static/88086c681ea60df193f9771ddc5c3677/0ede0/1.jpg 945w,
+/static/88086c681ea60df193f9771ddc5c3677/3ac88/1.jpg 1260w,
+/static/88086c681ea60df193f9771ddc5c3677/12609/1.jpg 3000w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;참고로 커피는 회장 내부로는 반입 불가능하지만, 밖에 커피 둘 곳을 마련해주셔서 세션 사이사이에 마셨다. 충전하기도 쉽지 않으니 노트북 풀충으로 오길 바란다. 와이파이는 코엑스 무료 와이파이를 쓸 수 있다.&lt;/p&gt;
+&lt;h2 id=&quot;들은-세션들&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%93%A4%EC%9D%80-%EC%84%B8%EC%85%98%EB%93%A4&quot; aria-label=&quot;들은 세션들 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;들은 세션들&lt;/h2&gt;
+&lt;p&gt;세션은 총 6개를 들었고 세션 듣기도 바빠서 네트워킹 파티는 참석하지 못했다.&lt;/p&gt;
+&lt;p&gt;평소 관심있는 기술과 성장 키워드가 들어간 세션들을 들었다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;컴퓨터 밑바닥에서 찾는 개발자 성장의 비밀&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;교수님이 설명해주시는 컴퓨터 구조… 컴퓨터 밑바닥=(CPU, OS)를 뜻한 것이었다. 재밌었다. 전공으로 들었던 것들 다 까먹었는데 대학시절 컴퓨터 구조 과목 듣던 때로 돌아간 기분도 들었다…&lt;/li&gt;
+&lt;li&gt;세션을 ‘ARM 칩 기반 맥북은 어떻게 소모전력이 낮음에도 성능이 높을까?’ ‘안드앱 소스코드엔 main() 메소드가 왜 없을까?’ 등의 질문으로 시작헸는데, 이 세션을 다 들으면 정답을 알 수 있다. 궁금하면 직접 듣도록 하자.&lt;/li&gt;
+&lt;li&gt;마지막에 책 두권을 추천해주셨다. 그 중 **‘컴퓨터 밑바닥의 비밀’**은 한 번 읽어보려고 생각 중이다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Next.js 블로그 모범 사례 탐구: Vercel 리더십 블로그 아키텍처 파헤치기&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;이것도 꽤 재밌는 세션. 일반적인 넥스트 블로그는 어떤식으로 만드는지, 또 vercel의 리더십 두분이 블로그를 어떻게 다르게 만들었는지 비교하고, 마지막으로 연사님은 블로그를 어떻게 만들었는지를 설명한 세션이다.&lt;/li&gt;
+&lt;li&gt;vercel의 리더십 두분이 잘 만든 넥스트 예제를 만들자고 서로 짠 것처럼 다른 방식으로 블로그를 만들었다는 사실이 재밌었다. (진실은 아무도 모르지만)&lt;/li&gt;
+&lt;li&gt;나도 연사님처럼 gatsby로 블로그를 만들었는데 이거 듣고 next로 갈아타고 싶은 마음이 들었다 ㅎㅎ.. (나중에 욕심생기면 db 붙이기도 좋을 것 같고, 갯츠비로 만들고 나서 그냥 익숙한 넥스트 할 걸 그랬나 후회하는 마음이 초큼 있었다.. next 블로그 영업이 됐다ㅎ)&lt;/li&gt;
+&lt;li&gt;내가 블로그를 만든다면 나도 db없이(블로그는 프론트만 관리하고 싶다.), 또 글을 코드로 관리하는 Rouchg 방식으로 만들 것 같다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;멀티패러다임 프로그래밍 언어의 시대: 객체지향과 함수형을 섞어야할 때!&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;이것도 재밌는 세션.. 라이브 코딩으로 tagged templates를 만들면서 함수형과 객체지향을 어떻게 적용해야할지 보여주신 세션이다.&lt;/li&gt;
+&lt;li&gt;역시 라이브 코딩은 어렵구나 생각을. ㅎㅎ&lt;/li&gt;
+&lt;li&gt;함수형은 정말 가독성이 좋구나 새삼 감탄.&lt;/li&gt;
+&lt;li&gt;함수형과 객체지향을 어느 때 써야할지 헷갈렸는데 ‘&lt;strong&gt;구조의 문제는 객체지향으로, 로직의 문제는 함수형’&lt;/strong&gt; 이라고 명쾌한 마무리를 지어주셔서 좋은 힌트를 얻어간 것 같다. 저자이신 ‘멀티 패러다임 프로그래밍’이라는 책을 홍보 하셨는데 읽어보고 싶다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;난생처음 만드는 Vite 플러그인&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;비트 플러그인을 비트가 어떻게 읽고 어떤식으로 만들면 되는지 설명한 세션이다.&lt;/li&gt;
+&lt;li&gt;라이브 코딩 대신 녹화해오시다니 현명하시다고 생각함.&lt;/li&gt;
+&lt;li&gt;모든 걸 공부할 수 없으니 재밌는걸 공부하자라는 마무리에 공감했다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;그래픽 엔진 포팅 사례로 배우는 웹어셈블리 웹 컴포넌트 개발부터 디버깅, 최적화까지&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;ThorVG의 WASM 웹 포팅 사례를 공유해주신 세션이다. 웹 포팅하면서 쓴 툴이나 장단점을 설명해주셔서 좋았다.&lt;/li&gt;
+&lt;li&gt;와 이거 정말 신기하고 안쓸 이유가 없겠는데… 하면서 봤다. 이제 C++도 파야하나 생각하다가 이렇게 생각하면 끝도 없겠다 싶어서 생각을 말았음.&lt;/li&gt;
+&lt;li&gt;기술들이 점점 어렵게 발전하는 것 같다 하하 (갈수록 쉬워져야하는거 아니냐고~~) GC없이 메모리 릭을 신경써야하는 부분만 봐도 (생각해보면 당연함) 개발자의 부담감이 더 늘어나는듯.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;개발자로 긴 커리어를 가지고 싶다면?&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;마지막으로 들었던 성장에 대한 좋은 이야기를 나눠주신 세션이다.&lt;/li&gt;
+&lt;li&gt;나이는 정말 중요하지 않다, 생각보다 시간이 정말 많다… 를 강조하셨다.&lt;/li&gt;
+&lt;li&gt;제일 기억에 남는 건 롱 텀은 잘할 거라 믿고, 숏 텀은 열심히 살아야한다는 것이다. 롱 텀 기간을 짧게 잡으면 당연히 성과가 날 수 없음에도 발전이 없다고 좌절하게 된다는 것이 공감이 갔다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;개인적으로 들었던 것 중에서는 Vercel 블로그 세션이 제일 좋았다. 제일 나의 다음 액션에 영향을 미칠 것 같은 세션이었기 때문이다. 블로그를 next로 바꾸는 거에 뽐뿌 온 듯.&lt;/p&gt;
+&lt;p&gt;다른 세션들도 너무 좋았다. 인프콘은 세션을 무료로 공개하기 때문에 꼭 들어보기를 추천한다.&lt;/p&gt;
+&lt;h2 id=&quot;스탬프-투어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%8A%A4%ED%83%AC%ED%94%84-%ED%88%AC%EC%96%B4&quot; aria-label=&quot;스탬프 투어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;스탬프 투어&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/633338b6514a4f4bc06acc72cf83412e/e2e58/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 232.27848101265823%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,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&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;스탬프 다모음&quot;
+        title=&quot;&quot;
+        src=&quot;/static/633338b6514a4f4bc06acc72cf83412e/f058b/2.png&quot;
+        srcset=&quot;/static/633338b6514a4f4bc06acc72cf83412e/c26ae/2.png 158w,
+/static/633338b6514a4f4bc06acc72cf83412e/6bdcf/2.png 315w,
+/static/633338b6514a4f4bc06acc72cf83412e/f058b/2.png 630w,
+/static/633338b6514a4f4bc06acc72cf83412e/40601/2.png 945w,
+/static/633338b6514a4f4bc06acc72cf83412e/e2e58/2.png 1069w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;세션 사이사이 남는 시간에는 스탬프 투어를 다녔는데 역시 랜덤 뽑기를 하니까 도파민이 돌고 눈이 번쩍 떠지고 재밌었다.&lt;/p&gt;
+&lt;p&gt;기업 부스 스탬프를 위해 데이터독 부스를 들렸는데, 유튜브 데이터독 RUM 웨비나에서 봤던 분이 계셔서 신기했다.&lt;/p&gt;
+&lt;p&gt;데이터독 부스에서는 대면으로 데이터독 강의를 들을 수 있었다. 보통 부스들은 구글폼 제출하고 룰렛돌려서 회전율이 빠른데, 데이터독은 짧은 제품 데모를 준비해오셨다. 내용이 유익해서 호감이었다. 티셔츠 질도 좋았다.&lt;/p&gt;
+&lt;p&gt;티셔츠를 한가득 받아와서 월화수목금 돌려입고 있다 ㅎㅎ&lt;/p&gt;
+&lt;h2 id=&quot;마치며&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%88%EC%B9%98%EB%A9%B0&quot; aria-label=&quot;마치며 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;마치며&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a7ff50890070855512664bb6735ab982/204b5/3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAADAv/aAAwDAQACEAMQAAABl0hTI4RY/8QAGxABAQACAwEAAAAAAAAAAAAAAgEDEQASITH/2gAIAQEAAQUCx3QmlFlI4fqPjva//8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAEQEkH/2gAIAQIBAT8BNYv/xAAaEAACAgMAAAAAAAAAAAAAAAAAEQEhEhNR/9oACAEBAAY/Aqi1Y8Ra4kQ+DP/EABkQAQADAQEAAAAAAAAAAAAAAAEAESFBMf/aAAgBAQABPyGqzQermhpy7pjAsfs5MQ9gWWnE1QaE/9oADAMBAAIAAwAAABAM3//EABgRAQEAAwAAAAAAAAAAAAAAAAEAESFR/9oACAEDAQE/EAZuw9v/xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAECAQE/EGrBVh//xAAdEAEBAAMAAgMAAAAAAAAAAAABEQAhMWGhQVHR/9oACAEBAAE/EGLZjKaU74mA4VYVBuySZqv1Goo89Zbboz7Hn9wyPRGvfxi7sgDgQ1n/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;점심 자랑&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a7ff50890070855512664bb6735ab982/828fb/3.jpg&quot;
+        srcset=&quot;/static/a7ff50890070855512664bb6735ab982/ff44c/3.jpg 158w,
+/static/a7ff50890070855512664bb6735ab982/a6688/3.jpg 315w,
+/static/a7ff50890070855512664bb6735ab982/828fb/3.jpg 630w,
+/static/a7ff50890070855512664bb6735ab982/0ede0/3.jpg 945w,
+/static/a7ff50890070855512664bb6735ab982/3ac88/3.jpg 1260w,
+/static/a7ff50890070855512664bb6735ab982/204b5/3.jpg 3870w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/babe9adb4f7e82cf1e33ddb0043107b3/93719/4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAABXJIFqeY//8QAGhABAAIDAQAAAAAAAAAAAAAAAQASAgMiIf/aAAgBAQABBQLUcj7kS1Uep//EABYRAQEBAAAAAAAAAAAAAAAAAAABIf/aAAgBAwEBPwGtf//EABYRAQEBAAAAAAAAAAAAAAAAAAABIf/aAAgBAgEBPwGMf//EABoQAAEFAQAAAAAAAAAAAAAAAAABAhARMmH/2gAIAQEABj8CKMqM7P8A/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFxQf/aAAgBAQABPyEW/wBmFcdiLjeQq/DGtR3IXP/aAAwDAQACAAMAAAAQfx//xAAXEQEBAQEAAAAAAAAAAAAAAAABACFR/9oACAEDAQE/EBknV//EABcRAQEBAQAAAAAAAAAAAAAAAAEAMVH/2gAIAQIBAT8Q2w8X/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARIXExgdH/2gAIAQEAAT8QEtq6dLZQiuCjWoBrA81CMEAJy057jkPSN78lJpvZ/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;돌아가는 길 한가득 짐..&quot;
+        title=&quot;&quot;
+        src=&quot;/static/babe9adb4f7e82cf1e33ddb0043107b3/828fb/4.jpg&quot;
+        srcset=&quot;/static/babe9adb4f7e82cf1e33ddb0043107b3/ff44c/4.jpg 158w,
+/static/babe9adb4f7e82cf1e33ddb0043107b3/a6688/4.jpg 315w,
+/static/babe9adb4f7e82cf1e33ddb0043107b3/828fb/4.jpg 630w,
+/static/babe9adb4f7e82cf1e33ddb0043107b3/0ede0/4.jpg 945w,
+/static/babe9adb4f7e82cf1e33ddb0043107b3/3ac88/4.jpg 1260w,
+/static/babe9adb4f7e82cf1e33ddb0043107b3/93719/4.jpg 4000w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;작년과의-비교&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%91%EB%85%84%EA%B3%BC%EC%9D%98-%EB%B9%84%EA%B5%90&quot; aria-label=&quot;작년과의 비교 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;작년과의 비교&lt;/h3&gt;
+&lt;p&gt;작년엔 핸즈온 세션이 있었는데 올해엔 핸즈온 대신 ‘프로그램’이란 게 생겨있었다. (일반 세션과의 차이점은 모르겠다. 들었을 땐 차이 없었다.)&lt;/p&gt;
+&lt;p&gt;핸즈온이 없어져서 아쉬웠다. 다같이 우당탕탕영차영차하는 맛이 있는데…! 그리고 작년 웹접근성에 대한 핸즈온 세션에서 많은 걸 배워갔던 게 기억에 남기 때문에, 이번엔 핸즈온이 없는 게 좀 아쉬웠다.&lt;/p&gt;
+&lt;p&gt;작년엔 20분짜리 세션들이 많아서 인사이트를 얻기엔 너무 짧았었는데, 이번엔 40분 세션이 많아서 좋았다. 40분이 딱 깊게는 못 배우더라도 새로운 것을 얻어가기 적당한 시간인 것 같다.&lt;/p&gt;
+&lt;p&gt;작년에 정말 얻어간게 많아서 비교하자면 작년이 더 좋긴 했지만, 올해 인프콘을 통해서도 새로 공부하고 싶은 분야들을 이것저것 찾게 되었으니 만족스러웠다.&lt;/p&gt;
+&lt;p&gt;(제발 내년에도 저를 붙여주세요)&lt;/p&gt;
+&lt;h3 id=&quot;느낀-점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8A%90%EB%82%80-%EC%A0%90&quot; aria-label=&quot;느낀 점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;느낀 점&lt;/h3&gt;
+&lt;p&gt;매일 하는 개발에 번아웃이 오려고 할 때 컨퍼런스에 가면 힘을 얻는 것 같다. 개인적으로는 컨퍼런스들 중에서도 정말 새로운 인사이트를 얻게 해주는 세션들이 많은 인프콘을 제일 좋아한다.&lt;/p&gt;
+&lt;p&gt;세션들을 들으면서, 공통적으로 연사님들이 하셨던 이야기는 커뮤니케이션의 중요성이었다. 오래 개발자를 하려면 협업 &amp;#x26; 커뮤니케이션 능력과 내가 아는 것을 설명할 수 있는 능력이 중요한 것 같다.&lt;/p&gt;
+&lt;p&gt;그래서 이번 인프콘을 계기로 나의 새로윤 다음 액션을 정해보았다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;내가 안다고 생각하는 것들을 설명할 수 있을 정도로 파보기.&lt;/li&gt;
+&lt;li&gt;블로그 넥스트로 바꾸기 (아마도)&lt;/li&gt;
+&lt;li&gt;컴퓨터 밑바닥의 비밀 / 멀티 패러다임 프로그래밍 책 읽기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;몇 개나 해낼지는 모르겠지만, 세션에서 들었던 것처럼 롱텀은 잘할 수 있을 거라 믿고 숏텀은 오늘의 일을 해야겠다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Next.js 프로젝트에서 서버사이드 처리하기 (리디렉션, 데이터 프리페칭)]]></title><description><![CDATA[React.js 프로젝트를 Next.js 프로젝트로 마이그레이션 할 일이 있었고,
 마이그레이션과 함께 다시 프로젝트를 재구성하면서 Next.js의 장점을 살려보고자 클라이언트에서 처리하던 것들을 서버단으로 옮겼던 경험을 적어보고자 한다.…]]></description><link>https://suu3.github.io/home/1/Next.js/[24-01-28]Next.js_프로젝트에서_서버사이드_처리하기/</link><guid isPermaLink="false">https://suu3.github.io/home/1/Next.js/[24-01-28]Next.js_프로젝트에서_서버사이드_처리하기/</guid><pubDate>Sun, 28 Jan 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;React.js 프로젝트를 Next.js 프로젝트로 마이그레이션 할 일이 있었고,
 마이그레이션과 함께 다시 프로젝트를 재구성하면서 Next.js의 장점을 살려보고자 클라이언트에서 처리하던 것들을 서버단으로 옮겼던 경험을 적어보고자 한다.&lt;/p&gt;
 &lt;h2 id=&quot;1-router-guard-처리하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-router-guard-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 router guard 처리하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Router Guard 처리하기&lt;/h2&gt;
