@@ -281,7 +281,7 @@ ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
   list-style-position: outside;
   list-style-image: none;
 }
@@ -289,11 +289,11 @@ ol {
 ul li,
 ol li {
   /* 추가 */
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: calc(var(--spacing-6) / 2);
 }
 
 li > p {
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: calc(var(--spacing-6) / 2);
 }
 
 li *:last-child {
@@ -301,19 +301,19 @@ li *:last-child {
 }
 
 li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
+  margin-left: calc(var(--spacing-6) / 2);
+  margin-top: calc(var(--spacing-6) / 4);
 }
 
 blockquote {
   color: var(--color-bg-surface-02);
   margin-left: calc(1 * var(--spacing-3));
-  margin-right: var(--spacing-8);
+  margin-right: var(--spacing-6);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-neutral-01);
   font-size: var(--fontSize-2);
   font-style: italic;
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
 }
 
 blockquote > :last-child {
@@ -327,7 +327,7 @@ blockquote > ol {
 
 table {
   width: 100%;
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
   border-collapse: collapse;
   border-spacing: 0.25rem;
 }
@@ -359,7 +359,7 @@ a:focus {
 }
 
 /* .global-header {
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
 } */
 
 .header-link-home {
@@ -370,7 +370,7 @@ a:focus {
 }
 
 .gatsby-highlight {
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
 }
 
 /* Media queries */
