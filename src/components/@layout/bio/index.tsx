@@ -7,8 +7,8 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { profile } from "./bio.module.css"
+import styles from "./bio.module.css"
+import profileImage from "./profile.gif"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -27,18 +27,9 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div className={profile}>
+    <div className={styles.profile}>
       <header>
-        <StaticImage
-          layout="fixed"
-          formats={["auto", "webp", "avif"]}
-          placeholder="blurred"
-          src="../../../../static/images/icon.png"
-          width={64}
-          height={64}
-          quality={95}
-          alt="logo"
-        />
+        <img src={profileImage} width={64} height={64} alt="profile image" />
 
         <div>
           <span>@{author?.name}</span>
