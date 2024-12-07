@@ -12,8 +12,21 @@ jobs:
     name: Create Release Pull Request or Publish to npm
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Create Release Pull Request or Publish
         uses: changesets/action@v1
@@ -23,19 +36,3 @@ jobs:
           version: pnpm changeset version
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-  release-tag:
-    name: Release pushed tag
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Create GitHub Release
-        env:
-          VERSION: ${{ github.ref_name }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release create "$VERSION" \
-          --repo="$GITHUB_REPOSITORY" \
-          --title="${VERSION#v}" \
-          --generate-notes
