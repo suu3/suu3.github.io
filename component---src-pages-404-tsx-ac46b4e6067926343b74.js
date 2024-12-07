@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_blog=self.webpackChunkgatsby_blog||[]).push([[453],{6219:function(t,e,n){n.r(e),n.d(e,{Head:function(){return c}});var l=n(758),a=n(1572),o=n(8e3);const c=()=>l.createElement(o.A,{title:"404: Not Found"});e.default=t=>{let{data:e,location:n}=t;const o=e.site.siteMetadata.title;return l.createElement(a.A,{location:n,title:o},l.createElement("h1",null,"404: Not Found"),l.createElement("p",null,"존재하지 않는 페이지입니다."))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-ac46b4e6067926343b74.js.map
