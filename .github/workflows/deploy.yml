@@ -28,12 +28,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: deploy
           PUBLISH_DIR: ./public
-      - name: Create tag
-        run: |
-          VERSION=$(jq -r '.version' < package.json)
-          git config --global user.email "dev.suu3@gmail.com"
-          git config --global user.name "suu3"
-          git tag -a "v$VERSION" -m "Release v$VERSION"
-          git push origin main --tags
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
