@@ -37,19 +37,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
-  release-tag:
-    name: Release pushed tag
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Create GitHub Release
-        env:
-          VERSION: ${{ github.ref_name }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release create "$VERSION" \
-          --repo="$GITHUB_REPOSITORY" \
-          --title="${VERSION#v}" \
-          --generate-notes
