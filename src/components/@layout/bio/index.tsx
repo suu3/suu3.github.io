@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "./bio.module.css"
+import { profile } from "./bio.module.css"
 import profileImage from "./profile.gif"
 
 const Bio = () => {
@@ -27,7 +27,7 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div className={styles.profile}>
+    <div className={profile}>
       <header>
         <img src={profileImage} width={64} height={64} alt="profile image" />
 
