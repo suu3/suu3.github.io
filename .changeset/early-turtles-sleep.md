@@ -1,0 +1,5 @@
+---
+"gatsby-blog": patch
+---
+
+test
