@@ -1,9 +1,7 @@
 name: Gh-pages deploy
 on:
   push:
-    branches: [main, develop]
-  pull_request:
-    branches: [main, develop]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,18 +22,16 @@ jobs:
         run: pnpm clean && pnpm run build
         env:
           NODE_ENV: production
-      - uses: peaceiris/actions-gh-pages@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v2
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: deploy
           PUBLISH_DIR: ./public
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create Release Pull Request
+      - name: Create Tag
         id: changesets
         uses: changesets/action@v1
         with:
           publish: pnpm changeset tag
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
