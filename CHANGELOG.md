@@ -1,5 +1,11 @@
 # gatsby-blog
 
+## 1.3.0
+
+### Minor Changes
+
+- [#16](https://github.com/suu3/suu3.github.io/pull/16) [`8a4d271`](https://github.com/suu3/suu3.github.io/commit/8a4d271afe87972a3a24c5f9f627f439863300d8) Thanks [@suu3](https://github.com/suu3)! - 콘텐츠 업데이트 및 gif 관련 image style 수정
+
 ## 1.2.0
 
 ### Minor Changes
