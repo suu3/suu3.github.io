@@ -278,7 +278,7 @@ p {
 
 ul,
 ol {
-  margin-left: var(--spacing-0);
+  margin-left: var(--spacing-);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
   margin-bottom: var(--spacing-6);
@@ -286,9 +286,14 @@ ol {
   list-style-image: none;
 }
 
+ol > li > ol {
+  list-style-type: lower-alpha;
+}
+
 ul li,
 ol li {
   /* 추가 */
+  margin-top: calc(var(--spacing-6) / 4);
   margin-bottom: calc(var(--spacing-6) / 2);
 }
 
@@ -300,7 +305,8 @@ li *:last-child {
   margin-bottom: var(--spacing-0);
 }
 
-li > ul {
+li > ul,
+li > ol {
   margin-left: calc(var(--spacing-6) / 2);
   margin-top: calc(var(--spacing-6) / 4);
 }
