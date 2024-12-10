@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[@suu3의 기술 블로그]]></description><link>https://suu3.github.io/home/1</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Dec 2024 18:28:28 GMT</lastBuildDate><item><title><![CDATA[2024년 회고록]]></title><description><![CDATA[시간이 정말 빠르다. 벌써 한 해를 돌아볼 시간이 왔다. 2023년은 프론트 개발자로서 2-…]]></description><link>https://suu3.github.io/home/1/회고/[2024-12-10]2024년_회고록/[2024-12-10]2024년_회고록/</link><guid isPermaLink="false">https://suu3.github.io/home/1/회고/[2024-12-10]2024년_회고록/[2024-12-10]2024년_회고록/</guid><pubDate>Tue, 10 Dec 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;시간이 정말 빠르다. 벌써 한 해를 돌아볼 시간이 왔다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[@suu3의 기술 블로그]]></description><link>https://suu3.github.io/home/1</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Dec 2024 19:04:36 GMT</lastBuildDate><item><title><![CDATA[2024년 회고록]]></title><description><![CDATA[시간이 정말 빠르다. 벌써 한 해를 돌아볼 시간이 왔다. 2023년은 프론트 개발자로서 2-…]]></description><link>https://suu3.github.io/home/1/회고/[2024-12-10]2024년_회고록/[2024-12-10]2024년_회고록/</link><guid isPermaLink="false">https://suu3.github.io/home/1/회고/[2024-12-10]2024년_회고록/[2024-12-10]2024년_회고록/</guid><pubDate>Tue, 10 Dec 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;시간이 정말 빠르다. 벌써 한 해를 돌아볼 시간이 왔다.&lt;/p&gt;
 &lt;p&gt;2023년은 프론트 개발자로서 2-3년차를 보낸 해였다. 여기까지 오니 평소에 어떻게 공부하고, 공부한 지식을 어떻게 정리해야할지 틀이 잡힌 느낌이다.&lt;/p&gt;
 &lt;p&gt;블로그도 처음에는 이슈나 정보 전달의 목적으로 사용려고 만들었는데, 노션을 너무 잘 사용하고 있어서 경험이나 회고 위주로 작성하고 있다. 노션 정리도 처음에는 정보가 이리저리 분산되어있었는데 잘 틀이 잡혀가고 있다.&lt;/p&gt;
 &lt;p&gt;예전에는 사이드 프로젝트에 대한 욕심이 많았는데, 올해는 만드는 욕심은 내려놓고 스터디 위주로 보냈던 것 같다. 올해에도 회사에서 맡고 있는 프로덕트가 바뀌고 반년에 걸쳐 오픈까지 진행했어서 큰 변화가 있었던 해인 것 같다.&lt;/p&gt;
@@ -2733,7 +2733,119 @@ urlpatterns &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&quot;{% url &apos;login:social:begin&apos; &apos;google-oauth2&apos; %}&quot;&gt;구글 로그인&amp;lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;login app -&gt; social namespace -&gt; begin&lt;/p&gt;
 &lt;p&gt;begin은 신경 쓸 필요 없으나 위에서 app 이름과 nampspace를 어떻게 적어줬는지 주의해서 작성하자.
-여기서도 마찬가지로 리다이렉션 시 &lt;strong&gt;Error: redirect_uri_mismatch&lt;/strong&gt; 가 뜬다면 &lt;strong&gt;redirect URI in request&lt;/strong&gt;~ 에 나온 주소를 0번의 &lt;strong&gt;승인된 리다이렉션 URI&lt;/strong&gt;에 추가한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[감정인식 챗봇 스피커 '버디' 프로젝트] 데이터 전처리와 KoBert]]></title><description><![CDATA[이번 편은 데이터 전처리와 KoBert를 사용한 챗봇 파트이다. 프로젝트 플로우에 따르면, 앞선 파트의 Face recognition을 통해 사용자가 부정적인 감정 상태(anger, contempt, disgust, fear, sadness…]]></description><link>https://suu3.github.io/home/1/Project/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/</link><guid isPermaLink="false">https://suu3.github.io/home/1/Project/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/</guid><pubDate>Sun, 14 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 편은 데이터 전처리와 KoBert를 사용한 챗봇 파트이다.&lt;/p&gt;
+여기서도 마찬가지로 리다이렉션 시 &lt;strong&gt;Error: redirect_uri_mismatch&lt;/strong&gt; 가 뜬다면 &lt;strong&gt;redirect URI in request&lt;/strong&gt;~ 에 나온 주소를 0번의 &lt;strong&gt;승인된 리다이렉션 URI&lt;/strong&gt;에 추가한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-native에서 json 파일 Firebase로 가져오기]]></title><description><![CDATA[Gymt…]]></description><link>https://suu3.github.io/home/1/Project/[2022-01-16]react-native에서 json 파일 Firebase로 가져오기/react-native에서 json 파일 Firebase로 가져오기/</link><guid isPermaLink="false">https://suu3.github.io/home/1/Project/[2022-01-16]react-native에서 json 파일 Firebase로 가져오기/react-native에서 json 파일 Firebase로 가져오기/</guid><pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Gymt는 과 내 개발 경험 적은 몇명이서 모여서 기획하고, 프론트만 작업하고, 공모전 우수상을 수상했던 프로젝트이다. (+ 직접 디자인도 했다.)&lt;br&gt;
+공모전 수상 후 학기가 시작됐고 좀더 하고싶은사람이 알아서 하자 하면서 팀이 뿔뿔이 흩어졌었는데, 학기가 바빠서 다시 손 못보고있다가 기껏 데이터셋 다 찾아놓고 데이터를 못 쓰고 끝난 게 계속 마음에 걸렸어서 뒤늦게 연결시켰다.&lt;/p&gt;
+&lt;p&gt;firebase 연결하고 데이터 가져오는 것은 생각보다 정말 쉬웠다.&lt;/p&gt;
+&lt;p&gt;해야할 일을 정리하자면 다음과 같이 세 가지가 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;엑셀 파일을 json으로 변환&lt;/li&gt;
+&lt;li&gt;firebase에 프로젝트 / 앱 추가 후 json 데이터를 firebase에 import&lt;/li&gt;
+&lt;li&gt;DB를 가져와서 알맞게 렌더링&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-excel-to-json-변환&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-excel-to-json-%EB%B3%80%ED%99%98&quot; aria-label=&quot;1 excel to json 변환 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. excel to json 변환&lt;/h2&gt;
+&lt;p&gt;파일 변환 사이트는 검색 시 많이 나온다.&lt;br&gt;
+나는 &lt;a href=&quot;https://csvjson.com/csv2json&quot;&gt;&lt;strong&gt;CSV to JSON&lt;/strong&gt;&lt;/a&gt; 사이트에서 변환했다.&lt;/p&gt;
+&lt;h2 id=&quot;2-import&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-import&quot; aria-label=&quot;2 import permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. import&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://copycoding.tistory.com/315&quot;&gt;&lt;strong&gt;다음의 블로그&lt;/strong&gt;&lt;/a&gt;를 참고했다.&lt;/p&gt;
+&lt;h2 id=&quot;3-데이터-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;3 데이터 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 데이터 가져오기&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://firebase.google.com/docs/firestore/&quot;&gt;&lt;strong&gt;firebase 문서&lt;/strong&gt;&lt;/a&gt;를 참고했다.&lt;/p&gt;
+&lt;p&gt;위 문서를 따라했다면, 2번 과정에서 firebase에서 프로젝트를 생성하고 js에 firebaseConfig를 복사해왔을 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import * as firebase from &quot;./node_modules/firebase/app&quot;;
+import { getFirestore } from &quot;firebase/firestore&quot;
+
+const firebaseConfig = {
+...
+}
+
+firebase.initializeApp(firebaseConfig);
+
+const db = getFirestore();
+export { db };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;내 경우 initializeApp을 가져오려고 똑같이 &lt;code class=&quot;language-text&quot;&gt;import { initializeApp } from &quot;firebase/app&quot;;&lt;/code&gt; 했을 때 모듈을 찾을 수 없다고 뜨는 이슈가 있어서 위와 같이 작성하였다.&lt;/p&gt;
+&lt;p&gt;그리고 데이터를 렌더링할 파일에 와서&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { db } from &quot;../config&quot;;
+import { collection, getDocs } from &quot;../node_modules/firebase/firestore&quot;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;db와 콜렉션, getDocs를 가져오고&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let contestList = [];
+async function dbContest(contestList) {
+  const querySnapshot = await getDocs(collection(db, &quot;contest&quot;));
+  querySnapshot.forEach((doc) =&gt; {
+    contestList.push({
+      id : doc.data().id,
+      date : doc.data().date,
+      title: doc.data().title,
+      sport : doc.data().kinds,
+    });
+  });
+}
+dbContest(contestList);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;데이터 객체를 리스트에 추가했다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1672b9e130517d6d3fea80db9c067d8b/47311/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 198.73417721518987%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAoABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAH0q657B0sKXovUHFAiQf/EABwQAAICAwEBAAAAAAAAAAAAAAABAgMQEyMUJP/aAAgBAQABBQLRBGis81ZKuDNUCKUU8vCO53PoP//EABoRAAICAwAAAAAAAAAAAAAAAAASUWEBAhD/2gAIAQMBAT8BXECax1bFs//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BX//EAB4QAAIABgMAAAAAAAAAAAAAAAABAhEgMUFCITKR/9oACAEBAAY/Asmxn0m4UdUcKVdkWhNT/8QAHxAAAgICAQUAAAAAAAAAAAAAAAERMRBBIWGBodHx/9oACAEBAAE/IfuHTwBo2TkrOMKSdG2FRtihPHu0TH0Dei8D/9oADAMBAAIAAwAAABAT8Tz4L//EABgRAAMBAQAAAAAAAAAAAAAAAABhcRCR/9oACAEDAQE/EFBDbFun/8QAGBEBAQADAAAAAAAAAAAAAAAAEQABEGH/2gAIAQIBAT8QeznbN//EAB0QAAICAwEBAQAAAAAAAAAAAAERADEhQbHBUZH/2gAIAQEAAT8QSQd2gPkUfUw6ng/isSRbjSBVVVMvxFRjbLx+QfSSp2PYrb75ARjBudD2ExDTbiZVjxDVJb2n/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;데이터가 불러와진 모습&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1672b9e130517d6d3fea80db9c067d8b/828fb/1.jpg&quot;
+        srcset=&quot;/static/1672b9e130517d6d3fea80db9c067d8b/ff44c/1.jpg 158w,
+/static/1672b9e130517d6d3fea80db9c067d8b/a6688/1.jpg 315w,
+/static/1672b9e130517d6d3fea80db9c067d8b/828fb/1.jpg 630w,
+/static/1672b9e130517d6d3fea80db9c067d8b/0ede0/1.jpg 945w,
+/static/1672b9e130517d6d3fea80db9c067d8b/47311/1.jpg 1080w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그 결과 데이터가 잘 불러와진 걸 볼 수 있었다. 데이터가 제대로 들어가면서 오버플로우가 발생한 김에 scrollView로 바꿔주었다.&lt;/p&gt;
+&lt;p&gt;++&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/39c08a37c6b832fe74b53b204c2ffbf1/627f4/2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 572.7848101265822%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCABzABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECBP/aAAwDAQACEAMQAAABc6Q5Z0DoRizDmb3BMLbct0YIKWuT7h0XKpv7lOiBc6XrMlBwrENS2Fho0wIDfDACf//EACAQAAICAgICAwAAAAAAAAAAAAECAAMRExIhEBQEIDL/2gAIAQEAAQUCFCT1q561csVms1mfHyKx5extm1pQxZAvfETELPt2iBuQ4AkVqJiG1ufKwypyympWYVLgDE6z1FYEam2PU8oQogHly2zMo/A+3//EABgRAAIDAAAAAAAAAAAAAAAAAAASAQIw/9oACAEDAQE/AUgSu/8A/8QAGREAAgMBAAAAAAAAAAAAAAAAEBEBEiBR/9oACAECAQE/AWGHqoU9x//EACQQAAEDBAEDBQAAAAAAAAAAAAABETECECFBMiAiYXGRodHh/9oACAEBAAY/AjZsq5SRWZeSb1Ii7svqOyexFl71RLQw5FlR48HL4MoOfdoOJgqy2RmVfLjKjZ6FmTZu37ZL/wD/xAAkEAEAAgICAQMFAQAAAAAAAAABABEhMUFRcRBhkYGhscHR8f/aAAgBAQABPyG2h+v5PekbTClWzRFdB8wsNHIgpbF33LDn7+gtQUz8kcF6TOoKwUafEAaAicYrUCopcfMzFvKW9Nvc1OXm4A1BjAJg0B9cY+cw1GufPMCDNHaCKIAWTGkXLSCpgVzElQ3tLywy3ALybhXHoAdbTwnJe7mBtc77gv8AsX3+YbjhjP/aAAwDAQACAAMAAAAQszayswkwjwFy58A8/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAEQESAhYUH/2gAIAQMBAT8Q5nI3F4WouE0vDUM//8QAGREAAwEBAQAAAAAAAAAAAAAAAAEREEFR/9oACAECAQE/EBWNEWkdyLzI8aiUUG5hXu//xAAiEAEBAAICAQQDAQAAAAAAAAABEQAhMUFRYXHR4YGhscH/2gAIAQEAAT8QopSxtJiR8XxlGuM6+MWj6CvF1xh3ad1rD7NAJMhi7ArROrgCftgR2NwIOlAFl4zzIPZ84LZR0exgqmCqF5wMK/iYXDOYEw5SMAElzv7DpVr7w4d6QZYppdjvN9DyX/WEpW27cEHlEGryXnFtdl0Me5kdiRqUg394FCqGcld4TVJwr/uMgAt0YciFeU84j+mQbozSP8yrcI3Yt0HGIjkJyn2usZ2ihro3igWaeF7yBID0Jgjwjm4XtWBfBm25MtiYqrz+vgwLCq2A1XzvDH2OFmwP5Y1s8GsVBHVxqlegz//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;(구미시, 축구) 검색 결과&quot;
+        title=&quot;&quot;
+        src=&quot;/static/39c08a37c6b832fe74b53b204c2ffbf1/828fb/2.jpg&quot;
+        srcset=&quot;/static/39c08a37c6b832fe74b53b204c2ffbf1/ff44c/2.jpg 158w,
+/static/39c08a37c6b832fe74b53b204c2ffbf1/a6688/2.jpg 315w,
+/static/39c08a37c6b832fe74b53b204c2ffbf1/828fb/2.jpg 630w,
+/static/39c08a37c6b832fe74b53b204c2ffbf1/627f4/2.jpg 810w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;체육관 검색 결과 페이지도 잘 작동하는걸 확인할 수 있었다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[감정인식 챗봇 스피커 '버디' 프로젝트] 데이터 전처리와 KoBert]]></title><description><![CDATA[이번 편은 데이터 전처리와 KoBert를 사용한 챗봇 파트이다. 프로젝트 플로우에 따르면, 앞선 파트의 Face recognition을 통해 사용자가 부정적인 감정 상태(anger, contempt, disgust, fear, sadness…]]></description><link>https://suu3.github.io/home/1/Project/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/</link><guid isPermaLink="false">https://suu3.github.io/home/1/Project/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/[2021-11-14][감정인식_챗봇_스피커_&apos;버디&apos;_프로젝트]_데이터_전처리와_KoBert/</guid><pubDate>Sun, 14 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 편은 데이터 전처리와 KoBert를 사용한 챗봇 파트이다.&lt;/p&gt;
 &lt;p&gt;프로젝트 플로우에 따르면, &lt;a href=&quot;https://suu3.github.io/Project/%5B2021-05-26%5D%5B%EA%B0%90%EC%A0%95%EC%9D%B8%EC%8B%9D_%EC%B1%97%EB%B4%87_%EC%8A%A4%ED%94%BC%EC%BB%A4_&amp;#x27;%EB%B2%84%EB%94%94&amp;#x27;_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%5D_%EC%96%BC%EA%B5%B4_%ED%91%9C%EC%A0%95_%EC%9D%B8%EC%8B%9D_%ED%8C%8C%ED%8A%B8/%5B2021-05-26%5D%5B%EA%B0%90%EC%A0%95%EC%9D%B8%EC%8B%9D_%EC%B1%97%EB%B4%87_%EC%8A%A4%ED%94%BC%EC%BB%A4_&amp;#x27;%EB%B2%84%EB%94%94&amp;#x27;_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%5D_%EC%96%BC%EA%B5%B4_%ED%91%9C%EC%A0%95_%EC%9D%B8%EC%8B%9D_%ED%8C%8C%ED%8A%B8/&quot;&gt;앞선 파트&lt;/a&gt;의 Face recognition을 통해 사용자가 부정적인 감정 상태(anger, contempt, disgust, fear, sadness)에 있는 것으로 판단될 때 혹은 사용자가 시작을 원할 때 대화가 시작된다.&lt;/p&gt;
 &lt;p&gt;대화가 시작되면 스피커는 사용자의 발화에 맞는 위로의 답변을 출력한다. 이 답변 출력을 위한 챗봇 파트를 다뤄본다.&lt;/p&gt;
 &lt;h2 id=&quot;챗봇-모델--kobert-kogpt2-koelectra&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B1%97%EB%B4%87-%EB%AA%A8%EB%8D%B8--kobert-kogpt2-koelectra&quot; aria-label=&quot;챗봇 모델  kobert kogpt2 koelectra permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;챗봇 모델 : KoBert? KoGPT2? KoELECTRA?&lt;/h2&gt;
@@ -3157,7 +3269,7 @@ epoch 50, batch 4일 때 Loss변화&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;체크포인트가 손상되었을 때 나오는 에러이. 이전 상태를 복구시키든지 다시 학습하든지 해야한다 ㅎㅎ..&lt;/p&gt;
+&lt;p&gt;체크포인트가 손상되었을 때 나오는 에러이다. 이전 상태를 복구시키든지 다시 학습하든지 해야한다 ㅎㅎ..&lt;/p&gt;
 &lt;p&gt;학습이 오래 걸려서 코랩으로 학습을 돌리고 자면 런타임 연결이 끊어지기 때문에
 (런타임 연결이 끊어지면... 다시 시작해야하는 수가 있다)&lt;/p&gt;
 &lt;p&gt;자동으로 계속 콘솔 로그를 찍어내는 setInterval 등의 방법으로 꼭 방지를 해줘야한다.&lt;/p&gt;
