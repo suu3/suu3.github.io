@@ -116,7 +116,7 @@ sites에는 127.0.0.1:8000를 추가한다.
 찾아봤을 때 다음 글을 참고할 수 있었다.
 
 - [**template 커스텀 방법까지 나와있는 참고 사이트**](https://learndjango.com/tutorials/django-log-in-email-not-username)
-- [관련 Issue](https://github.com/pennersr/django-allauth/issues/345)
+- [**관련 Issue**](https://github.com/pennersr/django-allauth/issues/345)
 
 위 글들을 참고했을 때, 나는 바로 소셜로그인 화면으로 바뀌는걸 원했어서 1번은 포기하고 2번 방법으로 넘어갔다. (\*2번은 db설정을 해줄 필요가 없어서 좀 더 간편하다.)
 

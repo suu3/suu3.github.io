@@ -36,7 +36,7 @@ const Bio = () => {
           <span>Developer</span>
         </div>
       </header>
-      <p>프론트엔드 개발자입니다.</p>
+      <p>그림과 음악이 좋은 프론트엔드 개발자</p>
     </div>
   )
 }
