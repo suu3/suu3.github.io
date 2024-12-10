@@ -1,5 +1,11 @@
 # gatsby-blog
 
+## 1.5.0
+
+### Minor Changes
+
+- [#20](https://github.com/suu3/suu3.github.io/pull/20) [`c41d8c8`](https://github.com/suu3/suu3.github.io/commit/c41d8c8d553edc7e5b88baf79ffee266f549323b) Thanks [@suu3](https://github.com/suu3)! - codepen 플러그인, 문서 구조 변경 및 추가
+
 ## 1.4.0
 
 ### Minor Changes
