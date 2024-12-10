@@ -168,14 +168,12 @@ header small {
   display: block;
   margin: auto;
   max-width: 700px;
-  @media (max-width: 1300px) {
+  @media (--desktop) {
     width: 100%;
   }
 }
 
-
 .blog-post li > img {
-  
 }
 
 .blog-post-nav a {

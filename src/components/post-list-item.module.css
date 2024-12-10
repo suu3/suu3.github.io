@@ -82,6 +82,8 @@
   margin-bottom: 16px;
 
   .img {
+    width: 100%;
+
     transition: transform var(--transition-duration)
       var(--transition-timing-function);
   }
