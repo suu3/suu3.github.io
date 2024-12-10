@@ -53,6 +53,9 @@ importers:
       gatsby-remark-autolink-headers:
         specifier: ^6.12.0
         version: 6.12.0(gatsby@5.11.0(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.1.0(react@18.1.0))(react@18.1.0)(type-fest@0.21.3)(typescript@5.1.6))(react-dom@18.1.0(react@18.1.0))(react@18.1.0)
+      gatsby-remark-codepen:
+        specifier: ^0.1.1
+        version: 0.1.1
       gatsby-remark-copy-relative-linked-files:
         specifier: ^1.5.0
         version: 1.5.0(gatsby@5.11.0(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.1.0(react@18.1.0))(react@18.1.0)(type-fest@0.21.3)(typescript@5.1.6))
@@ -2093,6 +2096,9 @@ packages:
       '@babel/core': ^7.11.6
       core-js: ^3.0.0
 
+  babel-runtime@6.26.0:
+    resolution: {integrity: sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==}
+
   bail@1.0.5:
     resolution: {integrity: sha512-xFbRxM1tahm08yHBP16MMjVUAvDaBMD38zsM9EMAUN61omwLmKlOpB/Zku5QkjZ8TZ4vn53pj+t518cH0S03RQ==}
 
@@ -2433,6 +2439,10 @@ packages:
 
   core-js-pure@3.31.1:
     resolution: {integrity: sha512-w+C62kvWti0EPs4KPMCMVv9DriHSXfQOCQ94bGGBiEW5rrbtt/Rz8n5Krhfw9cpFyzXBjf3DB3QnPdEzGDY4Fw==}
+
+  core-js@2.6.12:
+    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
 
   core-js@3.31.1:
     resolution: {integrity: sha512-2sKLtfq1eFST7l7v62zaqXacPc7uG8ZAya8ogijLhTtaKNcpzpB4TMoTw2Si+8GYKRwFPMMtUT0263QFWFfqyQ==}
@@ -3415,6 +3425,9 @@ packages:
       gatsby: ^5.0.0-next
       react: ^18.0.0 || ^0.0.0
       react-dom: ^18.0.0 || ^0.0.0
+
+  gatsby-remark-codepen@0.1.1:
+    resolution: {integrity: sha512-J8gABcofbAC9C30YG5nkWeCFlqDbEvLceCnxqPFX8mCIGrNTSh3AecI7yFjIdXH+MgrDf889t+IVbrHrLTmP1g==}
 
   gatsby-remark-copy-relative-linked-files@1.5.0:
     resolution: {integrity: sha512-danLMYTIj8RexTX6n0xyFYnu6Ci70QgBY5pXr/PsU/Rhprp2TjevG7bIACmXla+AMB9D1xlS2R6RvJJVfyv2yQ==}
@@ -5282,6 +5295,9 @@ packages:
   regenerate@1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
 
+  regenerator-runtime@0.11.1:
+    resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==}
+
   regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
 
@@ -6004,6 +6020,9 @@ packages:
   unist-util-generated@1.1.6:
     resolution: {integrity: sha512-cln2Mm1/CZzN5ttGK7vkoGw+RZ8VcUH6BtGbq98DDtRGquAAOXig1mrBQYelOwMXYS8rK+vZDyyojSjp7JX+Lg==}
 
+  unist-util-is@3.0.0:
+    resolution: {integrity: sha512-sVZZX3+kspVNmLWBPAB6r+7D9ZgAFPNWm66f7YNb420RlQSbn+n8rG8dGZSkrER7ZIXGQYNm5pqC3v3HopH24A==}
+
   unist-util-is@4.1.0:
     resolution: {integrity: sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg==}
 
@@ -6025,8 +6044,14 @@ packages:
   unist-util-visit-children@1.1.4:
     resolution: {integrity: sha512-sA/nXwYRCQVRwZU2/tQWUqJ9JSFM1X3x7JIOsIgSzrFHcfVt6NkzDtKzyxg2cZWkCwGF9CO8x4QNZRJRMK8FeQ==}
 
+  unist-util-visit-parents@2.1.2:
+    resolution: {integrity: sha512-DyN5vD4NE3aSeB+PXYNKxzGsfocxp6asDc2XXE3b0ekO2BaRUpBicbbUygfSvYfUz1IkmjFR1YF7dPklraMZ2g==}
+
   unist-util-visit-parents@3.1.1:
     resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
+
+  unist-util-visit@1.4.1:
+    resolution: {integrity: sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==}
 
   unist-util-visit@2.0.3:
     resolution: {integrity: sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==}
@@ -8767,6 +8792,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  babel-runtime@6.26.0:
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
+
   bail@1.0.5: {}
 
   balanced-match@1.0.2: {}
@@ -9182,6 +9212,8 @@ snapshots:
       browserslist: 4.21.9
 
   core-js-pure@3.31.1: {}
+
+  core-js@2.6.12: {}
 
   core-js@3.31.1: {}
 
@@ -10524,6 +10556,11 @@ snapshots:
       react: 18.1.0
       react-dom: 18.1.0(react@18.1.0)
       unist-util-visit: 2.0.3
+
+  gatsby-remark-codepen@0.1.1:
+    dependencies:
+      babel-runtime: 6.26.0
+      unist-util-visit: 1.4.1
 
   gatsby-remark-copy-relative-linked-files@1.5.0(gatsby@5.11.0(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.1.0(react@18.1.0))(react@18.1.0)(type-fest@0.21.3)(typescript@5.1.6)):
     dependencies:
@@ -12759,6 +12796,8 @@ snapshots:
 
   regenerate@1.4.2: {}
 
+  regenerator-runtime@0.11.1: {}
+
   regenerator-runtime@0.13.11: {}
 
   regenerator-transform@0.15.1:
@@ -13582,6 +13621,8 @@ snapshots:
 
   unist-util-generated@1.1.6: {}
 
+  unist-util-is@3.0.0: {}
+
   unist-util-is@4.1.0: {}
 
   unist-util-modify-children@2.0.0:
@@ -13608,10 +13649,18 @@ snapshots:
 
   unist-util-visit-children@1.1.4: {}
 
+  unist-util-visit-parents@2.1.2:
+    dependencies:
+      unist-util-is: 3.0.0
+
   unist-util-visit-parents@3.1.1:
     dependencies:
       '@types/unist': 2.0.7
       unist-util-is: 4.1.0
+
+  unist-util-visit@1.4.1:
+    dependencies:
+      unist-util-visit-parents: 2.1.2
 
   unist-util-visit@2.0.3:
     dependencies:
