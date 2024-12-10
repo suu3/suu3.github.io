@@ -59,6 +59,13 @@ module.exports = {
           "gatsby-remark-copy-relative-linked-files",
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs", // should be placed after `gatsby-remark-autolink-headers`
+          {
+            resolve: "gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 400,
+            },
+          },
         ],
       },
     },
