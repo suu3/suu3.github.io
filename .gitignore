@@ -56,10 +56,10 @@ typings/
 
 # gatsby files
 .cache/
-public
 
 # Mac files
 .DS_Store
 
 # 비공개 게시물
 @Private
+.next

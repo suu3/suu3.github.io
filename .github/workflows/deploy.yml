@@ -8,23 +8,28 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
-      - uses: pnpm/action-setup@v2
+          node-version: '20'
+
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
+
       - name: Install dependencies
-        run: pnpm install
-      - name: Build
-        run: pnpm clean && pnpm run build
+        run: pnpm install --frozen-lockfile
+
+      - name: Build static export
+        run: pnpm run build
         env:
           NODE_ENV: production
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          PUBLISH_BRANCH: deploy
-          PUBLISH_DIR: ./public
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_branch: deploy
+          publish_dir: ./out
